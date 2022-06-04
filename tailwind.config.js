@@ -42,7 +42,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      'royal': '#343767',
+      royal: "#2F2F51",
     }),
     columns: {
       auto: "auto",
