@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FiMail } from "react-icons/fi";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import ProductDropdown from "./ProductDropdown";
 import ProductDropdown2 from "./ProductDropdown2";
 import ProductDropdown3 from "./ProductDropdown3";
 import TabletNav from "./TabletNav";
+import ScrollupmenuNav from "./ScrollupmenuNav";
 
 
 
@@ -61,7 +63,7 @@ function Navbar() {
           </div>
         </div>
         {/* second nav */}
-        <div className="bg-white text-white h-[70px] text-[13px] border-b-[1.8px] shadow-lg">
+        <div className="bg-white text-white h-[70px] text-[13px] border-b-[2px] shadow-lg">
           <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-between items-center">
             {/* left side */}
             <div className="flex items-center">
@@ -76,8 +78,13 @@ function Navbar() {
                   onMouseLeave={() => setDropnav(true)}
                   className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group"
                 >
-                  <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                    TV/AUDIO/VIDEO
+                  <div className="flex items-center">
+                      <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                        TV/AUDIO/VIDEO
+                      </div>
+                      <div className="opacity-[40%]">
+                          <MdKeyboardArrowDown />
+                      </div>
                   </div>
                   <ProductDropdown hidden={dropnav ? "hidden" : "block"} />
                 </div>
@@ -86,8 +93,13 @@ function Navbar() {
                 onMouseEnter={() => setDropnav2(false)}
                 onMouseLeave={() => setDropnav2(true)}
                 className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
-                  <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                    HOME APPLIANCES
+                  <div className="flex items-center">
+                      <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                        HOME APPLIANCES
+                      </div>
+                      <div className="opacity-[40%]">
+                          <MdKeyboardArrowDown />
+                      </div>
                   </div>
                   <ProductDropdown2 hidden={dropnav2 ? "hidden" : "block"} />
                 </div>
@@ -96,8 +108,13 @@ function Navbar() {
                 onMouseEnter={() => setDropnav3(false)}
                 onMouseLeave={() => setDropnav3(true)}
                 className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
-                  <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                    AIR CONDITIONERS
+                  <div className="flex items-center">
+                      <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                        AIR CONDITIONERS
+                      </div>
+                      <div className="opacity-[40%]">
+                          <MdKeyboardArrowDown />
+                      </div>
                   </div>
                   <ProductDropdown3 hidden={dropnav3 ? "hidden" : "block"} />
                 </div>
@@ -123,8 +140,9 @@ function Navbar() {
       {/* nav for mobile / tablet */}
       <TabletNav />
 
-        
-      
+      {/* scrollup contact icons */}
+      <ScrollupmenuNav />
+
     </div>
   );
 }
