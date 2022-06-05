@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiMail } from "react-icons/fi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -15,7 +15,20 @@ function Navbar() {
   const [dropnav, setDropnav] = useState(true);
   const [dropnav2, setDropnav2] = useState(true);
   const [dropnav3, setDropnav3] = useState(true);
+  
 
+  const [navscroll, setNavscroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 100) {
+        setNavscroll(true);
+      } else {
+        setNavscroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   
     // const drophandleNav = () => {
     //   setDropnav(!dropnav);
@@ -24,10 +37,10 @@ function Navbar() {
   console.log(dropnav);
 
   return (
-    <div className="w-full">
+    <div className="w-full fixed top-0">
       <nav className="w-full hidden md:block">
         {/* first nav */}
-        <div className="bg-royal text-white h-[41px] text-[13px]">
+        <div className={navscroll ? "bg-royal text-white h-[41px] hidden text-[13px]" : "bg-royal text-white h-[41px] text-[13px] "}>
           <div className="max-w-[1240px] px-[20px] mx-auto h-full flex justify-between items-center">
             {/* left side */}
             <div className="flex items-center space-x-[10px] cursor-pointer">
@@ -62,26 +75,27 @@ function Navbar() {
             </div>
           </div>
         </div>
+
         {/* second nav */}
         <div className="bg-white text-white h-[70px] text-[13px] border-b-[2px] shadow-lg">
           <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-between items-center">
             {/* left side */}
             <div className="flex items-center">
               {/* logo */}
-              <div className="w-[90px] mr-[40px] cursor-pointer">
+              <div className="w-[90px] mr-[20px] cursor-pointer">
                 <img src="/royal_logo.svg" alt="" />
               </div>
-              <div className="text-black text-[16px] font-bold flex space-x-[30px] h-full ">
+              <div className="text-black text-[16px] font-bold flex space-x-[0px] h-full ">
                 {/* tv */}
                 <div
                   onMouseEnter={() => setDropnav(false)}
                   onMouseLeave={() => setDropnav(true)}
                   className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group"
                 >
-                  <div className="flex items-center">
-                      <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                  <div className="flex items-center px-[20px]">
+                      <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
                         TV/AUDIO/VIDEO
-                      </div>
+                      </p>
                       <div className="opacity-[40%]">
                           <MdKeyboardArrowDown />
                       </div>
@@ -93,10 +107,10 @@ function Navbar() {
                 onMouseEnter={() => setDropnav2(false)}
                 onMouseLeave={() => setDropnav2(true)}
                 className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
-                  <div className="flex items-center">
-                      <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                  <div className="flex items-center px-[20px]">
+                      <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
                         HOME APPLIANCES
-                      </div>
+                      </p>
                       <div className="opacity-[40%]">
                           <MdKeyboardArrowDown />
                       </div>
@@ -108,10 +122,10 @@ function Navbar() {
                 onMouseEnter={() => setDropnav3(false)}
                 onMouseLeave={() => setDropnav3(true)}
                 className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
-                  <div className="flex items-center">
-                      <div className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                  <div className="flex items-center px-[20px]">
+                      <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
                         AIR CONDITIONERS
-                      </div>
+                      </p>
                       <div className="opacity-[40%]">
                           <MdKeyboardArrowDown />
                       </div>

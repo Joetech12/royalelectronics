@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
 const ProductDropdown = ({ hidden, dropnav }) => {
 
-   
+    const [navscroll, setNavscroll] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY >= 100) {
+          setNavscroll(true);
+        } else {
+          setNavscroll(false);
+        }
+      };
+      window.addEventListener("scroll", handleScroll);
+    }, []);
+    
 
   return (
-    <div className={`bg-white h-[220px] ${hidden} absolute right-0 top-[111px] left-0 z-10 transition-all duration-500`}>
+    <div className={navscroll ? `bg-white h-[220px] ${hidden} absolute right-0 top-[70px] left-0 z-10 transition-all duration-500` : `h-[220px] ${hidden} bg-white absolute right-0 top-[111px] left-0 z-10 transition-all duration-500`}>
             <div className="max-w-[1240px] mx-auto h-full flex items-center justify-between space-x-[10px]">
                 {/* product 1 */}
                 <div className="flex flex-col items-center justify-between cursor-pointer h-full ">

@@ -19,12 +19,12 @@ const TabletNav = () => {
 
   return (
     <nav className="w-full md:hidden">
-      <div className="bg-white h-[70px] text-[13px] border-b-[1.8px] shadow-lg">
-        <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-between items-center">
+      <div className="bg-white xs:h-[60px] md:h-[70px] text-[13px] border-b-[1.8px] shadow-lg">
+        <div className="max-w-[1240px] mx-auto xs:px-[10px] sm:px-[20px] h-full flex justify-between items-center">
           {/* left side */}
           <div className="flex items-center">
             {/* logo */}
-            <div className="w-[90px] mr-[40px] cursor-pointer">
+            <div className="xs:w-[70px] md:w-[90px] mr-[40px] cursor-pointer">
               <img src="/royal_logo.svg" alt="" />
             </div>
           </div>
@@ -45,9 +45,9 @@ const TabletNav = () => {
             : "fixed md:hidden bg-white h-full w-[80%] top-0 flex flex-col items-start pt-[0px] pb-[50px] z-20 left-[0] ease-in-out duration-[300ms]"
         }
       >
-        <div className="flex items-center justify-between mb-[0px] xs:px-[10px] sm:px-[50px] py-[10px] w-full border-b-[2px]">
+        <div className="flex items-center justify-between mb-[0px] xs:px-[20px] sm:px-[50px] py-[10px] w-full border-b-[2px]">
           {/* logo */}
-          <div className="w-[90px] mr-[40px]">
+          <div className="xs:w-[70px] md:w-[90px] mr-[40px]">
             <img src="/royal_logo.svg" alt="" />
           </div>
           {/* close menu */}
@@ -59,7 +59,7 @@ const TabletNav = () => {
           </div>
         </div>
 
-        <ul className=" font-semibold uppercase w-full xs:px-[10px] sm:px-[50px]">
+        <ul className=" font-semibold uppercase w-full xs:px-[20px] sm:px-[50px]">
           <li className="flex items-center  justify-between w-full my-[50px] cursor-pointer">
             <p className="hover:text-[#464A8A]">HOME</p>
             <div className="text-[25px] text-royal cursor-pointer">
