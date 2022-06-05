@@ -5,17 +5,11 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 
 const TabletNav = () => {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
-
-  
-
-
-
-
 
   return (
     <nav className="w-full md:hidden">
@@ -30,7 +24,10 @@ const TabletNav = () => {
           </div>
           {/* right menus */}
           <div className="">
-            <div onClick={handleNav} className="text-[25px] cursor-pointer text-royal">
+            <div
+              onClick={handleNav}
+              className="text-[25px] cursor-pointer text-royal"
+            >
               <AiOutlineMenu />
             </div>
           </div>
@@ -111,10 +108,16 @@ const TabletNav = () => {
         </ul>
       </div>
 
-        {/* black overlay */}
-        
-        <div onClick={handleNav} className={!nav ? "bg-black/50 hidden fixed top-0 left-0 right-0 w-full h-full" : "bg-black/50 block fixed top-0 left-0 right-0 w-full h-full"} />
+      {/* black overlay */}
 
+      <div
+        onClick={handleNav}
+        className={
+          !nav
+            ? "bg-black/50 hidden fixed top-0 left-0 right-0 w-full h-full"
+            : "bg-black/50 block fixed top-0 left-0 right-0 w-full h-full"
+        }
+      />
     </nav>
   );
 };

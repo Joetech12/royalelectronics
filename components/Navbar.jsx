@@ -37,7 +37,7 @@ function Navbar() {
   console.log(dropnav);
 
   return (
-    <div className="w-full fixed top-0">
+    <div className="w-full fixed top-0 z-[99]">
       <nav className="w-full hidden md:block">
         {/* first nav */}
         <div className={navscroll ? "bg-royal text-white h-[41px] hidden text-[13px]" : "bg-royal text-white h-[41px] text-[13px] "}>
