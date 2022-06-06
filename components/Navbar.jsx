@@ -94,7 +94,7 @@ function Navbar() {
                 >
                   <div className="flex items-center px-[20px]">
                       <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                        TV/AUDIO/VIDEO
+                        VISION AND SOUND
                       </p>
                       <div className="opacity-[40%]">
                           <MdKeyboardArrowDown />
@@ -109,7 +109,7 @@ function Navbar() {
                 className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
                   <div className="flex items-center px-[20px]">
                       <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                        HOME APPLIANCES
+                        HOME APPLIANCE
                       </p>
                       <div className="opacity-[40%]">
                           <MdKeyboardArrowDown />
@@ -124,7 +124,7 @@ function Navbar() {
                 className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
                   <div className="flex items-center px-[20px]">
                       <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                        AIR CONDITIONERS
+                        AIR CONDITIONING
                       </p>
                       <div className="opacity-[40%]">
                           <MdKeyboardArrowDown />

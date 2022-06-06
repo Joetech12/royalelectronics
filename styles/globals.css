@@ -41,7 +41,8 @@ body {
 
 /* HeroS */
 .fade-anim img {
-  animation: fadeAnim 0.5s ease-out;
+  animation: fadeAnim 5s ease-out;
+  transition: all;
 }
 @keyframes fadeAnim {
   from {

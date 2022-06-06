@@ -22,32 +22,41 @@ const ProductDropdown = ({ hidden, dropnav }) => {
           : `h-[220px] ${hidden} bg-white absolute right-0 top-[111px] left-0 z-10 transition-all duration-500`
       }
     >
-      <div className="max-w-[1240px] mx-auto h-full flex items-center space-x-[100px]">
+      <div className="max-w-[1240px] mx-auto h-full flex items-center space-x-[100px] px-[20px]">
         {/* product 1 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/2.png" alt="" className="w-[180px]" />
+            <img src="/13.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[10px]">
-            <p className="text-[16px] font-semibold">Chest Freezer</p>
+            <p className="text-[16px] font-semibold">Inverter AC</p>
           </div>
         </div>
         {/* product 2 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/1.png" alt="" className="w-[60px]" />
+            <img src="/14.png" alt="" className="w-[160px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[10px]">
-            <p className="text-[16px] font-semibold">Refrigerator</p>
+            <p className="text-[16px] font-semibold">Standing plus AC</p>
           </div>
         </div>
         {/* product 3 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/3.png" alt="" className="w-[110px]" />
+            <img src="/16.png" alt="" className="w-[40px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[10px]">
-            <p className="text-[16px] font-semibold">Washing Machine</p>
+            <p className="text-[16px] font-semibold">Standing AC</p>
+          </div>
+        </div>
+        {/* product 4 */}
+        <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
+          <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
+            <img src="/17.png" alt="" className="w-[150px]" />
+          </div>
+          <div className="flex-[1] flex items-center justify-center py-[10px]">
+            <p className="text-[16px] font-semibold">Non-inverter AC</p>
           </div>
         </div>
       </div>
