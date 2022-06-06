@@ -26,46 +26,47 @@ const PopularSection = () => {
   // };
 
   return (
-    <div className="h-[800px]">
-      <div className="bg-white text-white h-[70px] text-[13px]">
-        <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-center items-center">
-          <div className="flex items-center">
-            <div className="text-black text-[18px] font-bold flex space-x-[0px] h-full ">
+    <div className="">
+      <div className="bg-white text-white text-[13px]">
+        <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-center items-center ">
+          
+          <div className="flex flex-col items-center">
+            <div className="text-black text-[20px] font-bold flex space-x-[0px] h-full pt-[20px]">
               {/* most popular */}
-              <div
+              <button
                 onClick={() => dispatch(dropHandler3())}
-                className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group"
+                className="border-b-[5px] font-bold border-[#464A8A]/1 h-full py-[20px] focus:border-[#464A8A] focus:text-royal duration-300 group"
               >
                 <div className="flex items-center px-[20px]">
                   <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
                     MOST POPULAR
                   </p>
                 </div>
-              </div>
+              </button>
               {/* latest */}
-              <div
+              <button
                 onClick={() => dispatch(dropHandler2())}
-                className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group"
+                className="border-b-[5px] font-bold border-[#464A8A]/0 h-full py-[20px] focus:border-[#464A8A] focus:text-royal duration-300 group"
               >
                 <div className="flex items-center px-[20px]">
                   <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
                     LATEST
                   </p>
                 </div>
-              </div>
-
-               {/* dropProducts */}
-
-              {dropValue ? <MostPopular /> : null}
-
-              {dropValue2 ? <Latest /> : null}
-
-               {/* { drop2 ? <Latest /> : null} */}
-
-
-
+              </button>
+              
 
             </div>
+
+            <div className="text-black text-[20px] font-bold relative">
+              <div className="">{dropValue ? <MostPopular /> : null}</div>
+              <div className="z-[20] absolute top-0">{dropValue2 ? <Latest /> : null}</div>
+              </div>
+
+
+
+
+
           </div>
         </div>
       </div>

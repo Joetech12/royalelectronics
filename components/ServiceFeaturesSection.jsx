@@ -12,7 +12,7 @@ const ServiceFeaturesSection = () => {
 
           <div className="flex xs:flex-col xs:items-center md:flex-row ">
 
-              <div className="bg-white w-full py-[50px] px-[20px] flex flex-col justify-center items-center">
+              <div className="bg-white w-full shadow-lg hover:shadow-2xl transition-all duration-500 py-[50px] px-[20px] flex flex-col justify-center items-center">
                   {/* Image */}
                 <div className="mb-[20px]">
                   <img src="/savings.jpeg" alt="" />
@@ -32,7 +32,7 @@ const ServiceFeaturesSection = () => {
                 </div>
               </div>
 
-              <div className="bg-white mx-[20px] my-[20px] w-full py-[50px] px-[20px] flex flex-col justify-center items-center">
+              <div className="bg-white mx-[20px] my-[20px] w-full shadow-lg hover:shadow-2xl transition-all duration-500 py-[50px] px-[20px] flex flex-col justify-center items-center">
                   {/* Image */}
                 <div className="mb-[20px]">
                   <img src="/savings.jpeg" alt="" />
@@ -52,7 +52,7 @@ const ServiceFeaturesSection = () => {
                 </div>
               </div>
 
-              <div className="bg-white  w-full py-[50px] px-[20px] flex flex-col justify-center items-center">
+              <div className="bg-white  w-full shadow-lg hover:shadow-2xl transition-all duration-500 py-[50px] px-[20px] flex flex-col justify-center items-center">
                   {/* Image */}
                 <div className="mb-[20px]">
                   <img src="/savings.jpeg" alt="" />
