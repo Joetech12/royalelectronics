@@ -26,7 +26,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 1 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/13.png" alt="" className="w-[130px]" />
+            <img src="/13.png" alt="" className="w-[160px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[10px]">
             <p className="text-[16px] font-semibold">Inverter AC</p>
@@ -35,7 +35,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 2 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/14.png" alt="" className="w-[160px]" />
+            <img src="/14.png" alt="" className="w-[170px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[10px]">
             <p className="text-[16px] font-semibold">Standing plus AC</p>
@@ -44,7 +44,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 3 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/16.png" alt="" className="w-[40px]" />
+            <img src="/16.png" alt="" className="w-[41px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[10px]">
             <p className="text-[16px] font-semibold">Standing AC</p>
@@ -53,7 +53,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 4 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/17.png" alt="" className="w-[150px]" />
+            <img src="/17.png" alt="" className="w-[180px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[10px]">
             <p className="text-[16px] font-semibold">Non-inverter AC</p>

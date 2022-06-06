@@ -19,7 +19,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
 
   return (
     <div className={navscroll ? `bg-white h-[220px] ${hidden} absolute right-0 top-[70px] left-0 z-10 transition-all duration-500` : `h-[220px] ${hidden} bg-white absolute right-0 top-[111px] left-0 z-10 transition-all duration-500`}>
-            <div className="max-w-[1240px] mx-auto h-full flex items-center justify-between space-x-[10px]">
+            <div className="max-w-[1240px] mx-auto h-full flex items-center px-[20px] space-x-[100px]">
                 {/* product 1 */}
                 <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
                     <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">

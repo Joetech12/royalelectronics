@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const ProductDropdown = ({ hidden, dropnav }) => {
+const HighlyRated = ({ hidden, dropnav }) => {
   const [navscroll, setNavscroll] = useState(false);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
     <div
       className={
         navscroll
-          ? `bg-white h-[220px] ${hidden} absolute right-0 top-[70px] left-0 z-10 transition-all duration-500`
+          ? `bg-white h-[220px] ${hidden} absolute right-0 top-[1474px] left-0 z-10 transition-all duration-500`
           : `h-[220px] ${hidden} bg-white absolute right-0 top-[111px] left-0 z-10 transition-all duration-500`
       }
     >
@@ -85,4 +85,4 @@ const ProductDropdown = ({ hidden, dropnav }) => {
   );
 };
 
-export default ProductDropdown;
+export default HighlyRated;
