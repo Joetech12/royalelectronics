@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 const VideoSection = () => {
   return (
     <div className="w-full bg-royal">
-      <div className="flex justify-center py-[0px]">
+      <div className="flex justify-center my-[80px]">
         {/* <video 
         src="/sign.mp4" 
         autoPlay={true} 

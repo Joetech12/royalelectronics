@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import BlogSection from '../components/BlogSection'
 import HeroSlider from '../components/HeroSlider'
 import PopularSection from '../components/PopularSection'
 import ServiceFeaturesSection from '../components/ServiceFeaturesSection'
@@ -41,7 +42,7 @@ export default function Home() {
      <ServiceFeaturesSection />
      <PopularSection />
      <VideoSection />
-     <ServiceFeaturesSection />
+     <BlogSection />
     </div>
   )
 }
