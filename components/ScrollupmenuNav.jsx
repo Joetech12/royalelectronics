@@ -30,8 +30,8 @@ const ScrollupmenuNav = () => {
       <div
         className={
           chat
-            ? "bg-white flex flex-col fixed z-60 top-[35%] right-0 xs:mr-[10px] md:mr-[30px] w-[300px] h-[300px] block shadow-xl ease-in-out transition-all duration-[1000ms]"
-            : "bg-white  hidden fixed z-60 top-[35%] right-0 xs:mr-[10px] md:mr-[30px] w-[300px] h-[300px] shadow-xl transition-all ease-in-out duration-[1000ms]"
+            ? "bg-white flex flex-col fixed z-60 xs:top-[30%] md:top-[40%] right-0 xs:mr-[10px] md:mr-[30px] w-[300px] h-[300px] shadow-xl ease-in-out transition-all duration-[1000ms]"
+            : "bg-white  hidden fixed z-60 xs:top-[30%] md:top-[40%] right-0 xs:mr-[10px] md:mr-[30px] w-[300px] h-[300px] shadow-xl transition-all ease-in-out duration-[1000ms]"
         }
       >
         <div className="bg-[#0e1468]">
@@ -39,13 +39,14 @@ const ScrollupmenuNav = () => {
             Hi There!
           </p>
           <p className="text-white  text-[14px] text-center py-[10px] px-[30px]">
-            Click to chat with our Service Agent <br />{" "}
-            <div className="font-bold text-[18px]">on WhatsApp</div>
+            Click to chat with our Service Agent <br/>
+            <span className="font-bold text-[18px]">on WhatsApp</span>
           </p>
         </div>
+
         <a href="https://wa.link/3pkpmh" target="_blank" rel="noreferrer">
-          <div className="flex flex-col justify-center items-center pt-[10px] pb-[0px]">
-            <div className="w-[200px] mb-[17px] cursor-pointer">
+          <div className="flex flex-col justify-center items-center pt-[10px] pb-[0px] ">
+            <div className="w-[200px] mb-[17px] cursor-pointer animate-pulse">
               <img src="/agent.svg" alt="" />
             </div>
             <p className="text-[12px] font-semibold">
@@ -60,8 +61,8 @@ const ScrollupmenuNav = () => {
         <div
           className={
             scrollup
-              ? "lg:flex cursor-pointer fixed flex-col z-50 top-[75%] right-0 xs:mr-[20px] md:mr-[40px] duration-300"
-              : "lg:flex fixed flex-col z-50 top-[75%] right-0 xs:mr-[20px] md:mr-[40px] opacity-[0%] duration-300"
+              ? "lg:flex cursor-pointer fixed flex-col z-50 xs:top-[75%] md:top-[77%] right-0 xs:mr-[20px] md:mr-[40px] duration-300"
+              : "lg:flex fixed flex-col z-50 xs:top-[75%] md:top-[77%] right-0 xs:mr-[20px] md:mr-[40px] opacity-[0%] duration-300"
           }
         >
           <div className="text-[40px] rounded-[50%] shadow-lg outline outline-black/[0.1] outline-[0.5px] text-royal hover:outline-black/[0.05] hover:text-royal/70 duration-300 bg-white xs:p-[0px] md:p-[5px] mb-[20px]">
