@@ -82,9 +82,11 @@ function Navbar() {
             {/* left side */}
             <div className="flex items-center">
               {/* logo */}
-              <div className="w-[90px] mr-[20px] cursor-pointer">
-                <img src="/royal_logo.svg" alt="" />
-              </div>
+              <Link href="/">
+                <div className="w-[90px] mr-[20px] cursor-pointer">
+                  <img src="/royal_logo.svg" alt="" />
+                </div>
+              </Link>
               <div className="text-black text-[16px] font-bold flex space-x-[0px] h-full ">
                 {/* tv */}
                 <div

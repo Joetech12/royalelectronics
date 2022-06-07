@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Blog = ({ img, title, date, text }) => {
   return (
-    <div className="bg-white w-full shadow-lg hover:shadow-xl transition-all duration-500 pb-[30px] flex flex-col justify-center items-center xs:m-[30px] md:m-[30px] max-h-[500px]">
+    <div className="bg-white w-full shadow-lg hover:shadow-xl transition-all duration-500 pb-[30px] flex flex-col justify-center items-center xs:m-[30px] md:m-[20px] max-h-[500px]">
       {/* Image */}
       <div className="mb-[10px] cursor-pointer px-[-20px]">
         <Image src={img} alt="" width="500" height="300" objectFit="contain" />

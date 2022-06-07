@@ -38,8 +38,8 @@ const TabletNav = () => {
       <div
         className={
           !nav
-            ? "fixed md:hidden bg-white h-full w-[80%] left-[-100%] top-0 flex flex-col items-start pt-[0px] pb-[50px] ease-in-out duration-[300ms]   z-20 "
-            : "fixed md:hidden bg-white h-full w-[80%] top-0 flex flex-col items-start pt-[0px] pb-[50px] z-20 left-[0] ease-in-out duration-[300ms]"
+            ? "fixed md:hidden bg-white h-full w-[80%] left-[-100%] top-0 flex flex-col items-start pt-[0px] pb-[50px] ease-in-out duration-[1000ms]   z-20 "
+            : "fixed md:hidden bg-white h-full w-[80%] top-0 flex flex-col items-start pt-[0px] pb-[50px] z-20 left-[0] ease-in-out duration-[1000ms]"
         }
       >
         <div className="flex items-center justify-between mb-[0px] xs:px-[20px] sm:px-[50px] py-[10px] w-full border-b-[2px]">
