@@ -15,7 +15,7 @@ const ProductDetail1 = ({ img, name, desc }) => {
         <p className="font-bold text-[23px] mb-[0px]">
           {name}
         </p>
-        <p className="text-[16px] mb-[0px] text-center line-clamp-2 px-[10px]">
+        <p className="text-[16px] mb-[0px] text-center line-clamp-2 px-[20px] max-w-[400px]">
           {desc}
         </p>
       </div>
