@@ -30,7 +30,7 @@ const ProductDetail1 = ({ img, name, desc }) => {
         </button>
         <button
           href=""
-          className="bg-gradient-to-r from-[#464A8A] to-royal text-white rounded-[50px] px-[20px] py-[10px] cursor-pointer"
+          className="outline outline-[2px] bg-gradient-to-r from-[#464A8A] to-royal text-white rounded-[50px] px-[20px] py-[10px] cursor-pointer"
         >
           Where to buy
         </button>

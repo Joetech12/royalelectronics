@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ProductDetail2 = ({ img, name, desc }) => {
   return (
-    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-xl hover:shadow-2xl py-[30px] px-[20px] flex flex-col w-[386px] h-[482px] justify-center items-center group relative m-[20px] relative">
+    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-xl hover:shadow-2xl py-[30px] px-[20px] flex flex-col w-[386px] h-[482px] justify-center items-center group relative m-[20px]">
       {/* Image */}
       <div className=" cursor-pointer mb-[20px] px-[10px] transition-all duration-500 group-hover:scale-105 absolute top-[10%]">
         <img src={img} alt="" objectFit="contain" height="300" width="300" />
@@ -26,7 +26,7 @@ const ProductDetail2 = ({ img, name, desc }) => {
         </button>
         <button
           href=""
-          className="bg-gradient-to-r from-[#464A8A] to-royal text-white rounded-[50px] px-[20px] py-[10px] cursor-pointer"
+          className="outline outline-[2px] bg-gradient-to-r from-[#464A8A] to-royal text-white rounded-[50px] px-[20px] py-[10px] cursor-pointer"
         >
           Where to buy
         </button>
