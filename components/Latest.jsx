@@ -13,9 +13,24 @@ const Latest = ({ hidden, dropnav }) => {
 
     <div className="flex xs:flex-col xs:items-center md:flex-row">
 
-      <ProductDetail2 />
-      <ProductDetail2 />
-      <ProductDetail2 />
+    <ProductDetail2 
+        img="/4.png" 
+        name="Steel 5c Gas Cooker"
+        desc="Free standing Electric Oven, Big Capacity, True convection,
+        ®EasyClean-LRE3163ST Big Capacity, True convection, ®EasyClean-LRE3163ST"
+         />
+        <ProductDetail2 
+        img="/6.png" 
+        name="Royal Digital Microwave"
+        desc="Free standing Electric Oven, Big Capacity, True convection,
+        ®EasyClean-LRE3163ST Big Capacity, True convection, ®EasyClean-LRE3163ST"
+         />
+        <ProductDetail2 
+        img="/3.png" 
+        name="TwinT Washing Machine"
+        desc="Free standing Electric Oven, Big Capacity, True convection,
+        ®EasyClean-LRE3163ST Big Capacity, True convection, ®EasyClean-LRE3163ST"
+         />
       
     </div>
 

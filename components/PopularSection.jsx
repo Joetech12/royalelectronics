@@ -27,7 +27,7 @@ const PopularSection = () => {
 
   return (
     <div className="">
-      <div className="bg-white text-white text-[13px]">
+      <div className="bg-white text-white text-[13px] ">
         <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-center items-center ">
           
           <div className="flex flex-col items-center">

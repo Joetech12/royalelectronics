@@ -2,27 +2,28 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
 
-const ProductDetail2 = () => {
+const ProductDetail2 = ({ img, name, desc }) => {
   return (
-    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-xl py-[30px] px-[20px] flex flex-col w-[386px] h-[482px] justify-center items-center group relative m-[20px]">
+    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-xl hover:shadow-2xl py-[30px] px-[20px] flex flex-col w-[386px] h-[482px] justify-center items-center group relative m-[20px]">
       {/* Image */}
       <div className="cursor-pointer mb-[30px] px-[10px] transition-all duration-500 group-hover:scale-105 ">
-      <Image src="/6.png" alt="" objectFit="contain" height="300" width="300" />
+        <Image src={img} alt="" objectFit="contain" height="300" width="300" />
       </div>
       {/* Title */}
-      <p className="font-bold text-[24px] mb-[0px] xs:text-center">
-        GenPAL Inverter Technology
+      <p className="font-bold text-[23px] mb-[0px]">
+        {name}
       </p>
       <p className="text-[16px] mb-[0px] text-center line-clamp-2 px-[10px]">
-      Free standing Electric Oven, Big Capacity, True convection, ®EasyClean-LRE3163ST Big Capacity, True convection, ®EasyClean-LRE3163ST
+        {desc}
       </p>
       {/* Link */}
-      <div className="absolute bottom-[22px] px-[20px] py-[2px] w-full justify-center bg-white flex items-center translate-y-[100px] group-hover:translate-y-[0px] transition-all duration-500">
+      <div className="absolute text-[14px] bottom-[22px] px-[20px] py-[10px] w-full justify-center bg-white flex items-center translate-y-[100px] group-hover:translate-y-[0px] transition-all duration-500">
+        
         <button
           href=""
-          className="outline outline-[1px] w-[125px] h-[46px] rounded-[50px] cursor-pointer mr-[20px] px-[40px] py-[10px]"
+          className="outline outline-[2px] font-semibold text-royal rounded-[50px] px-[40px] py-[10px] mr-[20px] cursor-pointer"
         >
-          Detail
+          Details
         </button>
         <button
           href=""
