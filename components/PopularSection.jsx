@@ -31,7 +31,7 @@ const PopularSection = () => {
         <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-center items-center ">
           
           <div className="flex flex-col items-center divide-y-[4px]">
-            <div className="text-black text-[24px] font-bold flex space-x-[0px] h-full pt-[20px]">
+            <div className="text-black xs:text-[18px] md:text-[24px] font-bold flex space-x-[0px] h-full pt-[20px]">
               {/* most popular */}
               <button
                 onClick={() => dispatch(dropHandler3())}

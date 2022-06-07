@@ -22,41 +22,41 @@ const ProductDropdown = ({ hidden, dropnav }) => {
           : `h-[220px] ${hidden} bg-white absolute right-0 top-[111px] left-0 z-10 transition-all duration-500`
       }
     >
-      <div className="max-w-[1240px] mx-auto h-full flex items-center px-[20px] space-x-[50px]">
+      <div className="max-w-[1240px] mx-auto h-full flex justify-start items-start px-[20px] space-x-[50px]">
         {/* product 1 */}
-        <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
-          <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
+        <div className="flex flex-col items-center justify-center cursor-pointer h-full relative">
+          <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110 ">
             <img src="/7.png" alt="" className="w-[180px]" />
           </div>
-          <div className="flex-[1] flex items-center justify-center py-[10px]">
+          <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Television</p>
           </div>
         </div>
         {/* product 2 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
-          <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
+          <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
             <img src="/11.png" alt="" className="w-[200px]" />
           </div>
-          <div className="flex-[1] flex items-center justify-center py-[10px]">
+          <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Home Theatre</p>
           </div>
         </div>
         {/* product 3 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
-          <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
+          <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
             <img src="/12.png" alt="" className="w-[200px]" />
           </div>
-          <div className="flex-[1] flex items-center justify-center py-[10px]">
+          <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Sound Bar</p>
           </div>
         </div>
 
         {/* product 4 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
-          <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/8.png" alt="" className="w-[200px]" />
+          <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
+            <img src="/8.png" alt="" className="w-[150px]" />
           </div>
-          <div className="flex-[1] flex items-center justify-center py-[10px]">
+          <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Boom Box</p>
           </div>
         </div>

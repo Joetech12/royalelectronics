@@ -19,11 +19,11 @@ const ServiceFeaturesSection = () => {
                 </div>
                 <div className="flex flex-col justify-start">
                     {/* Title */}
-                    <p className="font-bold text-[24px] mb-[10px]">Royal Inverter Technology</p>
+                    <p className="font-bold xs:text-[18px] md:text-[24px] mb-[10px]">Royal Inverter Technology</p>
                     {/* Link */}
                     <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px]">
-                        <p href="" className="cursor-pointer">
-                          LEARN MORE
+                        <p href="" className="cursor-pointer xs:text-[14px] md:text-[18px]">
+                          Learn More
                         </p>
                         <div className="text-[25px] text-royal cursor-pointer">
                           <MdOutlineKeyboardArrowRight />
@@ -39,11 +39,11 @@ const ServiceFeaturesSection = () => {
                 </div>
                 <div className="flex flex-col justify-start">
                     {/* Title */}
-                    <p className="font-bold text-[24px] mb-[10px]">4K Resolutions Screen</p>
+                    <p className="font-bold xs:text-[18px] md:text-[24px] mb-[10px]">4K Resolutions Screen</p>
                     {/* Link */}
                     <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px]">
-                        <p href="" className="cursor-pointer">
-                          LEARN MORE
+                        <p href="" className="cursor-pointer xs:text-[14px] md:text-[18px]">
+                        Learn More
                         </p>
                         <div className="text-[25px] text-royal cursor-pointer">
                           <MdOutlineKeyboardArrowRight />
@@ -59,11 +59,11 @@ const ServiceFeaturesSection = () => {
                 </div>
                 <div className="flex flex-col justify-start">
                     {/* Title */}
-                    <p className="font-bold text-[24px] mb-[10px]">Royal warranty policy</p>
+                    <p className="font-bold xs:text-[18px] md:text-[24px] mb-[10px]">Royal warranty policy</p>
                     {/* Link */}
                     <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px]">
-                        <p href="" className="cursor-pointer">
-                          LEARN MORE
+                        <p href="" className="cursor-pointer xs:text-[14px] md:text-[18px]">
+                        Learn More
                         </p>
                         <div className="text-[25px] text-royal cursor-pointer">
                           <MdOutlineKeyboardArrowRight />

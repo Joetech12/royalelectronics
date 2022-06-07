@@ -25,7 +25,7 @@ const Blog = ({ img, title, date, text }) => {
         <p className="mr-[10px] line-clamp-3 mb-[20px]">{text}</p>
         <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px] mb-[20px]">
           <p href="" className="cursor-pointer ">
-            READ MORE
+            Read More
           </p>
           <div className="text-[25px] text-royal cursor-pointer">
             <MdOutlineKeyboardArrowRight />

@@ -18,11 +18,12 @@ const Partners = () => {
           </div>
 
           {/* partners */}
-          <div className="flex justify-center items-center pt-[50px]">
+          <div className="flex xs:flex-col md:flex-row justify-center items-center pt-[50px]">
             <a
-              className="w-[100px] m-[30px] cursor-pointer"
+              className="w-[120px] m-[30px] cursor-pointer"
               href="https://simsng.com/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="sims.png" alt="" />
             </a>
@@ -30,6 +31,7 @@ const Partners = () => {
               className="w-[200px] m-[30px] cursor-pointer"
               href="https://www.jumia.com.ng/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="jumia.png" alt="" />
             </a>
@@ -37,10 +39,10 @@ const Partners = () => {
               className="w-[200px] m-[30px] cursor-pointer"
               href="https://www.konga.com/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="konga.png" alt="" />
             </a>
-            
           </div>
         </div>
       </div>
