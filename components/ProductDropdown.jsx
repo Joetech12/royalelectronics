@@ -26,7 +26,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 1 */}
         <div className="flex flex-col items-center justify-center cursor-pointer h-full relative">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110 ">
-            <img src="/7.png" alt="" className="w-[180px]" />
+            <img src="/7.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Television</p>
@@ -35,26 +35,26 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 2 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/11.png" alt="" className="w-[200px]" />
+            <img src="/11.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
-            <p className="text-[16px] font-semibold">Home Theatre</p>
+            <p className="text-[16px] font-semibold">Home Theater</p>
           </div>
         </div>
         {/* product 3 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/12.png" alt="" className="w-[200px]" />
+            <img src="/12.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
-            <p className="text-[16px] font-semibold">Sound Bar</p>
+            <p className="text-[16px] font-semibold">Sound Box</p>
           </div>
         </div>
 
         {/* product 4 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/8.png" alt="" className="w-[150px]" />
+            <img src="/8.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Boom Box</p>
@@ -63,13 +63,13 @@ const ProductDropdown = ({ hidden, dropnav }) => {
 
         {/* product 5 */}
         {/* <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
-                    <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
-                      <img src="/5.png" alt="" className="w-[80px]"/>
-                    </div>
-                    <div className="flex-[1] flex items-center justify-center py-[10px]">
-                        <p className="text-[16px] font-semibold">Blender</p>
-                    </div>
-                </div> */}
+          <div className="flex-[5] flex items-end justify-center transition-all duration-500 hover:scale-110">
+            <img src="/5.png" alt="" className="w-[150px]" />
+          </div>
+          <div className="flex-[1] flex items-center justify-center py-[10px]">
+            <p className="text-[16px] font-semibold">Blender</p>
+          </div>
+        </div> */}
 
         {/* product 6 */}
         {/* <div className="flex flex-col items-center justify-between cursor-pointer h-full ">

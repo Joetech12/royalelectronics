@@ -26,7 +26,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 1 */}
         <div className="flex flex-col items-center justify-center cursor-pointer h-full relative">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110 ">
-            <img src="/2.png" alt="" className="w-[150px]" />
+            <img src="/2.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Chest Freezer</p>
@@ -35,7 +35,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 2 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/1.png" alt="" className="w-[150px]" />
+            <img src="/1.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Refrigerator</p>
@@ -44,7 +44,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 3 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/3.png" alt="" className="w-[150px]" />
+            <img src="/3.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Washing Machine</p>
@@ -54,7 +54,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
         {/* product 4 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/4.png" alt="" className="w-[150px]" />
+            <img src="/4.png" alt="" className="w-[130px]" />
           </div>
           <div className="flex-[1] flex items-center justify-center py-[0px]">
             <p className="text-[16px] font-semibold">Gas Cooker</p>
