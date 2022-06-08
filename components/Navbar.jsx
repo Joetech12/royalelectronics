@@ -9,13 +9,10 @@ import ProductDropdown3 from "./ProductDropdown3";
 import TabletNav from "./TabletNav";
 import ScrollupmenuNav from "./ScrollupmenuNav";
 
-
-
 function Navbar() {
   const [dropnav, setDropnav] = useState(true);
   const [dropnav2, setDropnav2] = useState(true);
   const [dropnav3, setDropnav3] = useState(true);
-  
 
   const [navscroll, setNavscroll] = useState(false);
 
@@ -29,10 +26,10 @@ function Navbar() {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
-  
-    // const drophandleNav = () => {
-    //   setDropnav(!dropnav);
-    // };
+
+  // const drophandleNav = () => {
+  //   setDropnav(!dropnav);
+  // };
 
   console.log(dropnav);
 
@@ -40,7 +37,13 @@ function Navbar() {
     <div className="w-full fixed top-0 z-[99]">
       <nav className="w-full hidden md:block">
         {/* first nav */}
-        <div className={navscroll ? "bg-[#0e1468] text-white h-[41px] hidden text-[13px]" : "bg-[#0e1468] text-white h-[41px] text-[13px] "}>
+        <div
+          className={
+            navscroll
+              ? "bg-[#0e1468] text-white h-[41px] hidden text-[13px]"
+              : "bg-[#0e1468] text-white h-[41px] text-[13px] "
+          }
+        >
           <div className="max-w-[1240px] px-[20px] mx-auto h-full flex justify-between items-center">
             {/* left side */}
             <div className="flex items-center space-x-[10px] cursor-pointer">
@@ -54,22 +57,42 @@ function Navbar() {
               <p className="font-thin text-white/20 text-[20px]">|</p>
               {/* social media */}
               <div className="flex space-x-[15px]">
-                <div className="text-[15px] cursor-pointer hover:text-white/70 duration-300">
+                {/* facebook */}
+                <a
+                  href="https://web.facebook.com/royalelectronicsgroup"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[15px] cursor-pointer hover:text-white/70 duration-300"
+                >
                   <FaFacebookF />
-                </div>
-                <div className="text-[15px] cursor-pointer hover:text-white/70 duration-300">
+                </a>
+                {/* instagram */}
+                <a
+                  href="https://www.instagram.com/royalelectronicsgroup/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[15px] cursor-pointer hover:text-white/70 duration-300"
+                >
                   <FaInstagram />
-                </div>
-                <div className="text-[15px] cursor-pointer hover:text-white/70 duration-300">
+                </a>
+                {/* twitter */}
+                <a
+                  href="https://twitter.com/royalelectroni2"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[15px] cursor-pointer hover:text-white/70 duration-300"
+                >
                   <FaTwitter />
-                </div>
+                </a>
               </div>
             </div>
             {/* right side */}
             <div className="flex space-x-[20px] items-center">
-              <p className="cursor-pointer hover:text-white/70 duration-300 ">
-                STORE LOCATOR
-              </p>
+              <Link href="/store-locator">
+                <p className="cursor-pointer hover:text-white/70 duration-300 ">
+                  STORE LOCATOR
+                </p>
+              </Link>
               {/* <p className="font-thin text-white/20 text-[20px]">|</p>
                 <p className="cursor-pointer hover:text-white/70 duration-300">CONTACT US</p> */}
             </div>
@@ -95,46 +118,47 @@ function Navbar() {
                   className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group"
                 >
                   <div className="flex items-center px-[20px]">
-                      <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                        VISION AND SOUND
-                      </p>
-                      <div className="opacity-[40%]">
-                          <MdKeyboardArrowDown />
-                      </div>
+                    <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                      VISION AND SOUND
+                    </p>
+                    <div className="opacity-[40%]">
+                      <MdKeyboardArrowDown />
+                    </div>
                   </div>
                   <ProductDropdown hidden={dropnav ? "hidden" : "block"} />
                 </div>
                 {/* home appliance */}
-                <div 
-                onMouseEnter={() => setDropnav2(false)}
-                onMouseLeave={() => setDropnav2(true)}
-                className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
+                <div
+                  onMouseEnter={() => setDropnav2(false)}
+                  onMouseLeave={() => setDropnav2(true)}
+                  className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group"
+                >
                   <div className="flex items-center px-[20px]">
-                      <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                        HOME APPLIANCE
-                      </p>
-                      <div className="opacity-[40%]">
-                          <MdKeyboardArrowDown />
-                      </div>
+                    <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                      HOME APPLIANCE
+                    </p>
+                    <div className="opacity-[40%]">
+                      <MdKeyboardArrowDown />
+                    </div>
                   </div>
                   <ProductDropdown2 hidden={dropnav2 ? "hidden" : "block"} />
                 </div>
                 {/* air conditioner */}
-                <div 
-                onMouseEnter={() => setDropnav3(false)}
-                onMouseLeave={() => setDropnav3(true)}
-                className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group">
+                <div
+                  onMouseEnter={() => setDropnav3(false)}
+                  onMouseLeave={() => setDropnav3(true)}
+                  className="border-b-[5px]  border-[#464A8A]/0 h-full py-[20px] hover:border-[#464A8A] duration-300 group"
+                >
                   <div className="flex items-center px-[20px]">
-                      <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                        AIR CONDITIONING
-                      </p>
-                      <div className="opacity-[40%]">
-                          <MdKeyboardArrowDown />
-                      </div>
+                    <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
+                      AIR CONDITIONING
+                    </p>
+                    <div className="opacity-[40%]">
+                      <MdKeyboardArrowDown />
+                    </div>
                   </div>
                   <ProductDropdown3 hidden={dropnav3 ? "hidden" : "block"} />
                 </div>
-                
               </div>
             </div>
             {/* right menus */}
@@ -158,7 +182,6 @@ function Navbar() {
 
       {/* scrollup contact icons */}
       <ScrollupmenuNav />
-
     </div>
   );
 }

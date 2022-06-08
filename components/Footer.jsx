@@ -3,7 +3,6 @@ import { FiMail } from "react-icons/fi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
-
 const Footer = () => {
   return (
     <div className=" w-full bg-gradient-to-r from-[#030632] to-[#0e1468] text-white ">
@@ -12,7 +11,9 @@ const Footer = () => {
         <div className="flex md:flex-row xs:flex-col items-start mb-[50px] ">
           {/* company */}
           <div className="flex-[3] flex flex-col xs:mb-[40px] md:mb-[0px]">
-            <p className="font-bold mb-[20px] text-[18px]">Royal Electronics Group</p>
+            <p className="font-bold mb-[20px] text-[18px]">
+              Royal Electronics Group
+            </p>
             <p className="max-w-[900px]">
               We understand your needs like no other brand, that’s because we’ve
               been designing for Nigeria for over 40 years and whether there’s
@@ -21,37 +22,66 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex md:flex-row xs:flex-col">
-              {/* customer service */}
-              <div className="flex-[1] flex flex-col xs:mb-[40px] md:mb-[0px] xs:mx-[0px] md:mx-[100px]">
-                <p className="font-bold mb-[20px] text-[18px]">Customer Service</p>
-                <p className="mb-[7px] cursor-pointer hover:text-white/70 duration-300">Buying Guide</p>
-                <p className="mb-[7px] cursor-pointer hover:text-white/70 duration-300">FAQs</p>
-                <p className="cursor-pointer hover:text-white/70 duration-300">Warranty</p>
+            {/* customer service */}
+            <div className="flex-[1] flex flex-col xs:mb-[40px] md:mb-[0px] xs:mx-[0px] md:mx-[100px]">
+              <p className="font-bold mb-[20px] text-[18px]">
+                Customer Service
+              </p>
+              <p className="mb-[7px] cursor-pointer hover:text-white/70 duration-300">
+                Buying Guide
+              </p>
+              <p className="mb-[7px] cursor-pointer hover:text-white/70 duration-300">
+                FAQs
+              </p>
+              <p className="cursor-pointer hover:text-white/70 duration-300">
+                Warranty
+              </p>
+            </div>
+            {/* locate us */}
+            <div className="flex-[1] flex flex-col">
+              <p className="font-bold mb-[20px] text-[18px]">Locate Us</p>
+              <p className="mb-[20px]">
+                40 Akin Adesola St, Victoria Island 106104, Lagos
+              </p>
+              <p className="font-bold mb-[10px] text-[18px]">Follow Us</p>
+              <div className="flex space-x-[15px] items-center">
+                <a
+                  href="https://web.facebook.com/royalelectronicsgroup"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[20px] cursor-pointer hover:text-white/70 duration-300"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="https://www.instagram.com/royalelectronicsgroup/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[25px] cursor-pointer hover:text-white/70 duration-300"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://twitter.com/royalelectroni2"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[20px] cursor-pointer hover:text-white/70 duration-300"
+                >
+                  <FaTwitter />
+                </a>
               </div>
-              {/* locate us */}
-              <div className="flex-[1] flex flex-col">
-                <p className="font-bold mb-[20px] text-[18px]">Locate Us</p>
-                <p className="mb-[20px]">40 Akin Adesola St, Victoria Island 106104, Lagos</p>
-                <p className="font-bold mb-[10px] text-[18px]">Follow Us</p>
-                <div className="flex space-x-[15px] items-center">
-                    <div className="text-[20px] cursor-pointer hover:text-white/70 duration-300">
-                      <FaFacebookF />
-                    </div>
-                    <div className="text-[25px] cursor-pointer hover:text-white/70 duration-300">
-                      <FaInstagram />
-                    </div>
-                    <div className="text-[20px] cursor-pointer hover:text-white/70 duration-300">
-                      <FaTwitter />
-                    </div>
-                  </div>
-              </div>
+            </div>
           </div>
         </div>
-        
+
         {/* bottom */}
         <div className="flex justify-between w-full xs:pt-[40px] md:pt-[20px] xs:flex-col md:flex-row text-[14px]">
-            <p className="xs:mb-[20px]">Copyright © 2021 Royal Electronics Group - All Rights Reserved.</p>
-            <p className="cursor-pointer hover:text-white/70 duration-300">Terms and Conditions | Privacy Policy</p>
+          <p className="xs:mb-[20px]">
+            Copyright © 2021 Royal Electronics Group - All Rights Reserved.
+          </p>
+          <p className="cursor-pointer hover:text-white/70 duration-300">
+            Terms and Conditions | Privacy Policy
+          </p>
         </div>
       </div>
     </div>
