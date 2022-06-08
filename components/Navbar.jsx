@@ -40,7 +40,7 @@ function Navbar() {
     <div className="w-full fixed top-0 z-[99]">
       <nav className="w-full hidden md:block">
         {/* first nav */}
-        <div className={navscroll ? "bg-royal text-white h-[41px] hidden text-[13px]" : "bg-royal text-white h-[41px] text-[13px] "}>
+        <div className={navscroll ? "bg-[#0e1468] text-white h-[41px] hidden text-[13px]" : "bg-[#0e1468] text-white h-[41px] text-[13px] "}>
           <div className="max-w-[1240px] px-[20px] mx-auto h-full flex justify-between items-center">
             {/* left side */}
             <div className="flex items-center space-x-[10px] cursor-pointer">

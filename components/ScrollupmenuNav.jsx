@@ -76,7 +76,7 @@ const ScrollupmenuNav = () => {
         onClick={handleChat}
         className="lg:flex fixed flex-col z-50 top-[85%] right-0 xs:mr-[10px] md:mr-[30px]"
       >
-        <div className="cursor-pointer text-[40px] rounded-[50%] outline outline-black/[0.1] outline-[0.5px] hover:outline-black/[0.05] hover:shadow-xl duration-300 bg-royal text-white xs:p-[10px] md:p-[14px]">
+        <div className="cursor-pointer text-[40px] rounded-[50%] outline outline-white outline-[0.5px] hover:outline-white/[0.5] hover:shadow-xl duration-300 bg-[#0e1468] text-white xs:p-[10px] md:p-[14px]">
           {/* <RiChatSmile3Fill /> */}
           {chat ? <AiOutlineClose /> : <RiChatSmile3Fill />}
         </div>
