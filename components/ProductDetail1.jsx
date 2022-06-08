@@ -8,7 +8,7 @@ const ProductDetail1 = ({ img, name, desc }) => {
     <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-xl hover:shadow-2xl py-[30px] px-[20px] flex flex-col w-[386px] h-[482px] justify-center items-center group relative m-[20px]">
       {/* Image */}
       <div className=" cursor-pointer mb-[20px] px-[10px] transition-all duration-500 group-hover:scale-105 absolute top-[10%]">
-        <img src={img} alt="" objectFit="contain" height="300" width="300" />
+        <img src={img} alt="" objectfit="contain" height="300" width="300" />
       </div>
       {/* Title */}
       <div className="text-center absolute bottom-[35px]">
