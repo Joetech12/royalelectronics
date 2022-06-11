@@ -4,7 +4,7 @@ import HighlyRated from "./HighlyRated";
 import Latest from "./Latest";
 import MostPopular from "./MostPopular";
 import { useDispatch } from "react-redux";
-import { dropHandler, dropHandler2, dropHandler3 } from "../slices/dropSlice";
+import { dropHandler, dropHandler2, dropHandler3, dropHandler4 } from "../slices/dropSlice";
 import { selectValue, selectValue2 } from "../slices/dropSlice";
 import { useSelector } from "react-redux";
 
@@ -32,7 +32,11 @@ const PopularSection = () => {
               {/* most popular */}
               <button
                 onClick={() => dispatch(dropHandler3())}
-                className="border-b-[5px] font-bold border-[#464A8A]/1 h-full py-[20px] focus:border-[#464A8A] focus:text-royal duration-300 group"
+                className={
+                  dropValue2
+                    ? "border-b-[5px] font-bold border-[#464A8A]/1 h-full py-[20px] duration-300 group"
+                    : "border-b-[5px] font-bold border-[#464A8A] text-[#464A8A] h-full py-[20px] duration-300 group"
+                }
               >
                 <div className="flex items-center px-[20px]">
                   <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
@@ -43,7 +47,11 @@ const PopularSection = () => {
               {/* latest */}
               <button
                 onClick={() => dispatch(dropHandler2())}
-                className="border-b-[5px] font-bold border-[#464A8A]/0 h-full py-[20px] focus:border-[#464A8A] focus:text-royal duration-300 group"
+                className={
+                  dropValue2
+                    ? "border-b-[5px] font-bold border-[#464A8A] text-[#464A8A] h-full py-[20px] duration-300 group"
+                    : "border-b-[5px] font-bold border-[#464A8A]/1 h-full py-[20px] duration-300 group"
+                }
               >
                 <div className="flex items-center px-[20px]">
                   <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
@@ -53,7 +61,7 @@ const PopularSection = () => {
               </button>
             </div>
 
-            <div className="text-black text-[20px] font-bold relative">
+            <div className="text-black text-[20px] flex md:justify-center font-bold relative">
               <div className="">{dropValue ? <MostPopular /> : null}</div>
               <div className="z-[20] absolute top-0">
                 {dropValue2 ? <Latest /> : null}

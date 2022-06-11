@@ -21,6 +21,9 @@ export const dropSlice = createSlice({
     dropHandler3: (state = initialState2) => {
       state.value2 = false;
     },
+    dropHandler4: (state = initialState2) => {
+      state.value2 = !state.value2;
+    },
   },
 });
 
