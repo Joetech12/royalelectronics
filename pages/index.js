@@ -42,7 +42,7 @@ export default function Home() {
 
      <HeroSlider /> 
      <ServiceFeaturesSection />
-     <PopularSection />
+     <PopularSection rowID='1' />
      <VideoSection />
      <Partners />
      <BlogSection />

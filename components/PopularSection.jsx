@@ -1,72 +1,63 @@
-import React, { useState, useEffect } from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import HighlyRated from "./HighlyRated";
-import Latest from "./Latest";
-import MostPopular from "./MostPopular";
-import { useDispatch } from "react-redux";
-import { dropHandler, dropHandler2, dropHandler3, dropHandler4 } from "../slices/dropSlice";
-import { selectValue, selectValue2 } from "../slices/dropSlice";
-import { useSelector } from "react-redux";
+import React from "react";
+import Link from "next/link";
+import { products } from "../productsAPI";
+import ProductDetail1 from "./ProductDetail1";
+import {
+  MdChevronLeft,
+  MdChevronRight,
+  MdInsertEmoticon,
+} from "react-icons/md";
 
-const PopularSection = () => {
-  const dispatch = useDispatch();
-
-  const dropValue = useSelector(selectValue);
-
-  const dropValue2 = useSelector(selectValue2);
-
-  console.log();
-  // const [drop, setDrop] = useState(true);
-  // const [drop2, setDrop2] = useState(false);
-
-  // const dropHandler = () => {
-  //   setDrop(!drop);
-  // };
+const Partners = ({ rowID }) => {
+  const slideLeft = () => {
+    var slider = document.getElementById("slider" + rowID);
+    slider.scrollLeft = slider.scrollLeft - 500;
+  };
+  const slideRight = () => {
+    var slider = document.getElementById("slider" + rowID);
+    slider.scrollLeft = slider.scrollLeft + 500;
+  };
 
   return (
-    <div className="">
-      <div className="bg-white text-white text-[13px] ">
-        <div className="max-w-[1240px] mx-auto px-[20px] h-full flex justify-center items-center ">
+    <div className="w-full">
+      <div className="bg-white">
+        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[50px] md:py-[100px] divide-y-[4px]">
+          {/* heading */}
           <div className="flex flex-col items-center divide-y-[4px]">
-            <div className="text-black xs:text-[18px] md:text-[24px] font-bold flex space-x-[0px] h-full pt-[20px]">
-              {/* most popular */}
-              <button
-                onClick={() => dispatch(dropHandler3())}
-                className={
-                  dropValue2
-                    ? "border-b-[5px] font-bold border-[#464A8A]/1 h-full py-[20px] duration-300 group"
-                    : "border-b-[5px] font-bold border-[#464A8A] text-[#464A8A] h-full py-[20px] duration-300 group"
-                }
-              >
-                <div className="flex items-center px-[20px]">
-                  <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                    BEST SELLERS
-                  </p>
+            <div className="text-black text-[24px] font-bold flex space-x-[0px] h-full pt-[0px]">
+              <div className="border-b-[5px] font-bold border-[#464A8A] h-full py-[20px] duration-300 group">
+                <div className="flex items-center px-[20px] ">
+                  <p className="">NEW ARRIVALS</p>
                 </div>
-              </button>
-              {/* latest */}
-              <button
-                onClick={() => dispatch(dropHandler2())}
-                className={
-                  dropValue2
-                    ? "border-b-[5px] font-bold border-[#464A8A] text-[#464A8A] h-full py-[20px] duration-300 group"
-                    : "border-b-[5px] font-bold border-[#464A8A]/1 h-full py-[20px] duration-300 group"
-                }
-              >
-                <div className="flex items-center px-[20px]">
-                  <p className="cursor-pointer duration-300 group-hover:text-[#464A8A]">
-                    LATEST
-                  </p>
-                </div>
-              </button>
-            </div>
-
-            <div className="text-black text-[20px] flex md:justify-center font-bold relative">
-              <div className="">{dropValue ? <MostPopular /> : null}</div>
-              <div className="z-[20] absolute top-0">
-                {dropValue2 ? <Latest /> : null}
               </div>
             </div>
+          </div>
+
+          {/* product */}
+          <div className="relative flex items-center pt-[80px]">
+            <MdChevronLeft
+              onClick={slideLeft}
+              className="bg-royal3 text-white left-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 "
+              size={40}
+            />
+            <div
+              id={"slider" + rowID}
+              className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
+            >
+              {products.slice(0,10).map((item) => (
+                <div
+                  key={item.id}
+                  className="inline-block"
+                >
+                      <ProductDetail1 img={item.img} name={item.title} desc={item.desc} />
+                </div>
+              ))}
+            </div>
+            <MdChevronRight
+              onClick={slideRight}
+              className="bg-royal3 text-white right-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10"
+              size={40}
+            />
           </div>
         </div>
       </div>
@@ -74,4 +65,4 @@ const PopularSection = () => {
   );
 };
 
-export default PopularSection;
+export default Partners;
