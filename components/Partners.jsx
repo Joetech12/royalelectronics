@@ -5,9 +5,9 @@ const Partners = () => {
   return (
     <div className="w-full">
       <div className="bg-white">
-        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[50px] md:py-[100px] divide-y-[4px]">
+        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[50px] md:py-[100px] divide-y-[3px]">
           {/* heading */}
-          <div className="flex flex-col items-center divide-y-[4px]">
+          <div className="flex flex-col items-center divide-y-[3px]">
             <div className="text-black text-[24px] font-bold flex space-x-[0px] h-full pt-[0px]">
               <div className="border-b-[5px] font-bold border-[#464A8A] h-full py-[20px] duration-300 group">
                 <div className="flex items-center px-[20px] ">
