@@ -16,10 +16,10 @@ const ProductDetail1 = ({ img, name, desc }) => {
         <p className="text-[14px] font-normal mb-[0px] text-center">{desc}</p>
       </div>
       {/* Link */}
-      <div className="absolute text-[14px] bottom-[22px] px-[20px] py-[10px] w-full justify-center bg-white flex items-center translate-y-[100px] group-hover:translate-y-[0px] transition-all duration-500">
+      <div className="absolute text-[14px] bottom-[22px] px-[20px] py-[12px] w-full justify-center bg-white flex items-center translate-y-[100px] group-hover:translate-y-[0px] transition-all duration-500">
         <button
           href=""
-          className="outline outline-[2px] font-semibold text-royal rounded-[50px] px-[10px] py-[7px] mr-[10px] cursor-pointer"
+          className="outline xs:outline-[1px] md:outline-[2px] font-semibold text-royal rounded-[50px] px-[10px] py-[7px] mr-[10px] cursor-pointer"
         >
           Details
         </button>
