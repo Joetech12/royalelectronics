@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-const ProductDetail1 = ({ img, name, desc }) => {
+const ProductDetail1 = ({ img, name, desc, slug }) => {
   return (
     <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-lg hover:shadow-xl py-[30px] px-[20px] flex flex-col w-[250px] h-[360px] justify-center items-center group relative m-[5px] ">
       {/* Image */}
@@ -17,12 +18,13 @@ const ProductDetail1 = ({ img, name, desc }) => {
       </div>
       {/* Link */}
       <div className="absolute text-[14px] bottom-[22px] px-[20px] py-[12px] w-full justify-center bg-white flex items-center translate-y-[100px] group-hover:translate-y-[0px] transition-all duration-500">
-        <button
-          href=""
-          className="outline xs:outline-[1px] md:outline-[2px] font-semibold text-royal rounded-[50px] px-[10px] py-[7px] mr-[10px] cursor-pointer"
-        >
-          Details
-        </button>
+        <Link href={`/products/category/${slug}`}>
+          <button
+            className="outline xs:outline-[1px] md:outline-[2px] font-semibold text-royal rounded-[50px] px-[10px] py-[7px] mr-[10px] cursor-pointer"
+          >
+            Details
+          </button>
+        </Link>
         <button
           href=""
           className="outline outline-[2px] bg-gradient-to-r from-[#030632] to-[#0e1468] text-white rounded-[50px] px-[10px] py-[7px] cursor-pointer"

@@ -5,7 +5,9 @@ export const products = [
     title: "Royal Refrigerator",
     desc: "85RFTGH - Model",
     img: "/1.png",
-    lref: "/products/refrigerator",
+    img2: "/1.png",
+    img3: "/1.png",
+    lref: "/products/category/refrigerator",
     
   },
   {
@@ -14,7 +16,9 @@ export const products = [
     title: "Royal Chest Freezer",
     desc: "85RFTGH - Model",
     img: "/2.png",
-    lref: "/products/chest-freezer",
+    img2: "/2b.png",
+    img3: "/2c.png",
+    lref: "/products/category/chest-freezer",
     
   },
   {

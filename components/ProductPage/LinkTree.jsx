@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link";
 
 const LinkTree = () => {
   return (
@@ -6,7 +7,9 @@ const LinkTree = () => {
         <div className="bg-[#f1f1f1]">
             <div className="max-w-[1240px] mx-auto px-[20px]">
                  <div className="flex xs:flex-col md:flex-row justify-center items-center space-x-[20px] py-[30px]">
-                     <p className="font-bold cursor-pointer hover:underline">Home</p>
+                     <Link href="/">
+                       <p className="font-bold cursor-pointer hover:underline">Home</p>
+                     </Link>
                      <p className="">/</p>
                      <p className="font-bold cursor-pointer hover:underline">Royal Products</p>
                      <p className="">/</p>

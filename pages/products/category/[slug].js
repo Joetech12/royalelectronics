@@ -1,11 +1,11 @@
 import React from "react";
-import Head from 'next/head'
+import Head from "next/head";
 import HeroSection from "../../../components/ProductPage/HeroSection";
 import LinkTree from "../../../components/ProductPage/LinkTree";
 import RecommendedSection from "../../../components/ProductPage/RecommendedSection";
+import { products } from "../../../productsAPI";
 
-
-const Product = () => {
+const Product = ({ projects }) => {
   return (
     <div className="">
       <Head>
@@ -36,10 +36,33 @@ const Product = () => {
       </Head>
 
       <LinkTree />
-      <HeroSection />
-      <RecommendedSection rowID='1' />
+      <HeroSection
+        img={projects.img}
+        img2={projects.img2}
+        img3={projects.img3}
+        title={projects.title}
+        desc={projects.desc}
+      />
+      <RecommendedSection rowID="1" />
     </div>
   );
 };
 
 export default Product;
+
+export const getStaticProps = async ({ params }) => {
+  const data = products.filter((p) => p.slug === params.slug);
+
+  return {
+    props: {
+      projects: data[0],
+    },
+  };
+};
+
+export const getStaticPaths = async () => {
+  const paths = products.map((projects) => ({
+    params: { slug: projects.slug },
+  }));
+  return { paths, fallback: false };
+};
