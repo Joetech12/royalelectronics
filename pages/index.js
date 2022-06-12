@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import BestSellersSection from '../components/BestSellersSection'
 import BlogSection from '../components/BlogSection'
 import Footer from '../components/Footer'
 import HeroSlider from '../components/HeroSlider'
@@ -44,6 +45,7 @@ export default function Home() {
      <ServiceFeaturesSection />
      <PopularSection rowID='1' />
      <VideoSection />
+     <BestSellersSection rowID='2' />
      <Partners />
      <BlogSection />
 

@@ -8,7 +8,7 @@ import {
   MdInsertEmoticon,
 } from "react-icons/md";
 
-const PopularSection = ({ rowID }) => {
+const BestSellersSection = ({ rowID }) => {
   const slideLeft = () => {
     var slider = document.getElementById("slider" + rowID);
     slider.scrollLeft = slider.scrollLeft - 500;
@@ -21,13 +21,13 @@ const PopularSection = ({ rowID }) => {
   return (
     <div className="w-full">
       <div className="bg-white">
-        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[50px] md:py-[100px] divide-y-[3px]">
+        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[0px] md:py-[100px] divide-y-[3px]">
           {/* heading */}
           <div className="flex flex-col items-center">
             <div className="text-black text-[24px] font-bold flex space-x-[0px] h-full pt-[0px]">
               <div className="border-b-[5px] font-bold border-[#464A8A] h-full py-[20px] duration-300 group">
                 <div className="flex items-center px-[20px] ">
-                  <p className="">NEW ARRIVALS</p>
+                  <p className="">BEST SELLERS</p>
                 </div>
               </div>
             </div>
@@ -65,4 +65,4 @@ const PopularSection = ({ rowID }) => {
   );
 };
 
-export default PopularSection;
+export default BestSellersSection;
