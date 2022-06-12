@@ -1,6 +1,8 @@
 import React from "react";
 import { BiCommentDots } from "react-icons/bi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { blogs } from "../blogsAPI";
+
 import Blog from "./Blog";
 
 const BlogSection = () => {
@@ -20,35 +22,10 @@ const BlogSection = () => {
           </div>
 
           {/* blogs */}
-          <div className="flex xs:flex-col xs:items-center md:flex-row pt-[50px]">
-            <Blog
-              img="/blog1.jpg"
-              title="6 Interesting Things About Your HD TV"
-              date="6th June 2022"
-              text="Fridges are present in our homes to make our lives easier.
-            There are usually two scenarios that cause use to want a new
-            fridge. Your current appliance is near or at its end of life
-            and needs replacement. You are ready to give your kitchen a
-            new look, with a beautiful, more sophisticated fridge, with
-            all the latest technologies."
-            />
-
-            <Blog
-              img="/blog2.jpg"
-              title="Healthy Meals To Make In Your Microwave"
-              date="31st May 2022"
-              text="Your current appliance is near or at its end of life
-              and needs replacement. Fridges are present in our homes to make our lives easier. There are usually two scenarios that cause use to want a new fridge.  You are ready to give your kitchen a new look, with a beautiful, more sophisticated fridge, with all the latest technologies."
-            />
-
-            <Blog
-              img="/blog3.jpg"
-              title="How To Motivate Yourself To Do Your Laundry"
-              date="25th May 2022"
-              text="You are ready to give your kitchen a
-              new look, with a beautiful, more sophisticated fridge, with
-              all the latest technologies. Fridges are present in our homes to make our lives easier. There are usually two scenarios that cause use to want a new fridge. Your current appliance is near or at its end of life and needs replacement."
-            />
+          <div className="flex xs:flex-col xs:items-center md:flex-row pt-[50px] ">
+            {blogs.slice(0, 3).map((bg) => (
+              <Blog img={bg.img} title={bg.title} date={bg.date} text={bg.text} />
+            ))}
           </div>
         </div>
       </div>

@@ -11,14 +11,14 @@ const ServiceFeaturesSection = () => {
 
           <div className="flex xs:flex-col xs:items-center md:flex-row ">
 
-              <div className="bg-white w-full shadow-lg hover:shadow-xl transition-all duration-500 py-[30px] px-[20px] flex flex-col justify-center items-center">
+              <div className="bg-white w-full shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 py-[30px] px-[20px] flex flex-col justify-center items-center">
                   {/* Image */}
                 <div className="mb-[20px]">
                   <img src="/savings.jpeg" alt="" />
                 </div>
                 <div className="flex flex-col justify-start">
                     {/* Title */}
-                    <p className="font-bold xs:text-[18px] md:text-[24px] mb-[5px]">Royal Inverter Technology</p>
+                    <p className="font-bold xs:text-[16px] md:text-[24px] mb-[5px]">Royal Inverter Technology</p>
                     {/* Link */}
                     <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px]">
                         <p href="" className="cursor-pointer xs:text-[14px] md:text-[18px]">
@@ -31,14 +31,14 @@ const ServiceFeaturesSection = () => {
                 </div>
               </div>
 
-              <div className="bg-white mx-[20px] my-[20px] w-full shadow-lg hover:shadow-xl transition-all duration-500 py-[30px] px-[20px] flex flex-col justify-center items-center">
+              <div className="bg-white mx-[20px] my-[20px] w-full shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 py-[30px] px-[20px] flex flex-col justify-center items-center">
                   {/* Image */}
                 <div className="mb-[20px]">
                   <img src="/4k.jpg" alt="" />
                 </div>
                 <div className="flex flex-col justify-start">
                     {/* Title */}
-                    <p className="font-bold xs:text-[18px] md:text-[24px] mb-[5px]">4K Resolutions Screen</p>
+                    <p className="font-bold xs:text-[16px] md:text-[24px] mb-[5px]">4K Resolutions Screen</p>
                     {/* Link */}
                     <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px]">
                         <p href="" className="cursor-pointer xs:text-[14px] md:text-[18px]">
@@ -51,14 +51,14 @@ const ServiceFeaturesSection = () => {
                 </div>
               </div>
 
-              <div className="bg-white  w-full shadow-lg hover:shadow-xl transition-all duration-500 py-[30px] px-[20px] flex flex-col justify-center items-center">
+              <div className="bg-white  w-full shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 py-[30px] px-[20px] flex flex-col justify-center items-center">
                   {/* Image */}
                 <div className="mb-[20px]">
                   <img src="/warranty.jpg" alt="" />
                 </div>
                 <div className="flex flex-col justify-start">
                     {/* Title */}
-                    <p className="font-bold xs:text-[18px] md:text-[24px] mb-[5px]">Royal warranty policy</p>
+                    <p className="font-bold xs:text-[16px] md:text-[24px] mb-[5px]">Royal warranty policy</p>
                     {/* Link */}
                     <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px]">
                         <p href="" className="cursor-pointer xs:text-[14px] md:text-[18px]">

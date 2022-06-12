@@ -3,12 +3,13 @@ import { BiCommentDots } from "react-icons/bi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
 
+
 const Blog = ({ img, title, date, text }) => {
   return (
-    <div className="bg-white w-full shadow-lg hover:shadow-xl transition-all duration-500 pb-[30px] flex flex-col justify-center items-center xs:m-[30px] md:m-[20px] max-h-[500px]">
+    <div className="bg-white w-full shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 pb-[30px] flex flex-col justify-center items-center m-[20px]">
       {/* Image */}
       <div className="mb-[10px] cursor-pointer px-[-20px]">
-        <Image src={img} alt="" width="500" height="300" objectFit="contain" />
+        <Image src={img} alt="" width="500" height="300" />
       </div>
       <div className="flex flex-col justify-start px-[20px]">
         {/* Title */}
