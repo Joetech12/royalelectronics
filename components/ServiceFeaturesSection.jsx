@@ -31,7 +31,7 @@ const ServiceFeaturesSection = () => {
                 </div>
               </div>
 
-              <div className="bg-white mx-[20px] my-[20px] w-full shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 py-[30px] px-[20px] flex flex-col justify-center items-center">
+              <div className="bg-white mx-[30px] my-[30px] w-full shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 py-[30px] px-[20px] flex flex-col justify-center items-center">
                   {/* Image */}
                 <div className="mb-[20px]">
                   <img src="/4k.jpg" alt="" />
