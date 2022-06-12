@@ -24,7 +24,7 @@ const BlogSection = () => {
           {/* blogs */}
           <div className="flex xs:flex-col xs:items-center md:flex-row pt-[50px] ">
             {blogs.slice(0, 3).map((bg) => (
-              <Blog img={bg.img} title={bg.title} date={bg.date} text={bg.text} />
+              <Blog key={bg.id} img={bg.img} title={bg.title} date={bg.date} text={bg.text} />
             ))}
           </div>
         </div>
