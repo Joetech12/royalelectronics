@@ -24,6 +24,7 @@ const HeroSection = ({
   img4,
   title,
   desc,
+  cat,
   feat1,
   feat2,
   feat3,
@@ -99,30 +100,35 @@ const HeroSection = ({
               </div>
               {/* click images */}
               <div className="flex xs:space-x-[10px] md:space-x-[20px] mb-[30px]">
-                <div
+
+                { img && <div
                   onClick={() => dispatch(dropHandler4())}
                   className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
                 >
                   <img src={img} alt="" objectfit="contain" />
-                </div>
-                <div
+                </div>}
+
+                { img2 && <div
                   onClick={() => dispatch(dropHandler5())}
                   className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
                 >
                   <img src={img2} alt="" objectfit="contain" />
-                </div>
-                <div
+                </div>}
+
+                { img3 && <div
                   onClick={() => dispatch(dropHandler6())}
                   className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
                 >
                   <img src={img3} alt="" objectfit="contain" />
-                </div>
-                <div
+                </div>}
+
+                { img4 && <div
                   onClick={() => dispatch(dropHandler7())}
                   className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
                 >
                   <img src={img4} alt="" objectfit="contain" />
-                </div>
+                </div>}
+
               </div>
             </div>
             {/* right product name */}
@@ -169,30 +175,12 @@ const HeroSection = ({
               </div>
               {/* desc */}
               <div className="mt-[40px] max-w-[900px] mx-auto">
-                <div className="text-[18px]">
+                <div className="text-[18px] xs:pb-[50px] md:pb-[100px]">
                   <p className="font-bold xs:text-[18px] md:text-[24px]">
                     Description:
                   </p>
                   <p className="xs:text-[16px] md:text-[18px]">{featdesc}</p>
                 </div>
-                {/* <div className="text-[18px] mt-[20px]">
-                  <p className="font-bold xs:text-[18px] md:text-[20px]">
-                    Comfortable Fit:
-                  </p>
-                  <p className="xs:text-[16px] md:text-[18px]">
-                    Lightweight design, adjustable headband, and soft cushion
-                    earcups define a comfortable fit.
-                  </p>
-                </div>
-                <div className="text-[18px] mt-[20px]">
-                  <p className="font-bold xs:text-[18px] md:text-[20px]">
-                    LED Light Show:
-                  </p>
-                  <p className="xs:text-[16px] md:text-[18px]">
-                    Designed to add more fun and interaction with the built-in
-                    multi-color light show.
-                  </p>
-                </div> */}
               </div>
             </div>
           </div>

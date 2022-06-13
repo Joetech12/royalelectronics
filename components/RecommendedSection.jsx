@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
-import { products } from "../../productsAPI";
-import ProductDetail1 from "../ProductDetail1";
+import { products } from "../productsAPI";
+import ProductDetail1 from "./ProductDetail1";
 import {
   MdChevronLeft,
   MdChevronRight,
   MdInsertEmoticon,
 } from "react-icons/md";
 
-const RecommendedSection = ({ rowID }) => {
+const RecommendedSection = ({ rowID, product }) => {
   const slideLeft = () => {
     var slider = document.getElementById("slider" + rowID);
     slider.scrollLeft = slider.scrollLeft - 500;
@@ -44,14 +44,9 @@ const RecommendedSection = ({ rowID }) => {
               id={"slider" + rowID}
               className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
             >
-              {products.slice(0,10).map((item) => (
-                <div
-                  key={item.id}
-                  className="inline-block"
-                >
-                      <ProductDetail1 img={item.img} name={item.title} desc={item.desc} />
-                </div>
-              ))}
+              <div className="inline-block">
+               
+              </div>
             </div>
             <MdChevronRight
               onClick={slideRight}

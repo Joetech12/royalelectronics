@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link";
 
-const LinkTree = () => {
+const LinkTree = ({ product, cat, lref }) => {
   return (
     <div className="xs:mt-[60px] md:mt-[108px]">
         <div className="bg-[#f1f1f1]">
@@ -11,11 +11,13 @@ const LinkTree = () => {
                        <p className="font-bold cursor-pointer hover:underline">Home</p>
                      </Link>
                      <p className="">/</p>
-                     <p className="font-bold cursor-pointer hover:underline">Royal Products</p>
+                     {/* <p className="font-bold cursor-pointer hover:underline">Royal Products</p>
+                     <p className="">/</p> */}
+                     <Link href={lref}>
+                       <p className="font-bold cursor-pointer hover:underline">{cat}</p>
+                     </Link>
                      <p className="">/</p>
-                     <p className="font-bold cursor-pointer hover:underline">Royal Chest Freezers</p>
-                     <p className="">/</p>
-                     <p className="font-bold text-black/40">Royal Chest Freezer 250L FC340SH</p>
+                     <p className="font-bold text-black/40">{product}</p>
                  </div> 
             </div>
         </div>

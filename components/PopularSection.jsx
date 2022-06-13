@@ -49,7 +49,7 @@ const PopularSection = ({ rowID }) => {
                   key={item.id}
                   className="inline-block"
                 >
-                      <ProductDetail1 img={item.img} name={item.title} desc={item.desc} slug={item.slug} />
+                      <ProductDetail1 img={item.img} img2={item.img2} name={item.title} desc={item.desc} slug={item.slug} />
                 </div>
               ))}
             </div>

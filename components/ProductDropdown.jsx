@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 const ProductDropdown = ({ hidden, dropnav }) => {
   const [navscroll, setNavscroll] = useState(false);
@@ -24,23 +25,27 @@ const ProductDropdown = ({ hidden, dropnav }) => {
     >
       <div className="max-w-[1240px] mx-auto h-full flex justify-start items-start px-[20px] space-x-[50px]">
         {/* product 1 */}
-        <div className="flex flex-col items-center justify-center cursor-pointer h-full relative">
-          <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110 ">
-            <img src="/7.png" alt="" className="w-[130px]" />
+        <Link href="/products/television">
+          <div className="flex flex-col items-center justify-center cursor-pointer h-full relative">
+            <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110 ">
+              <img src="/7.png" alt="" className="w-[130px]" />
+            </div>
+            <div className="flex-[1] flex items-center justify-center py-[0px]">
+              <p className="text-[16px] font-semibold">Television</p>
+            </div>
           </div>
-          <div className="flex-[1] flex items-center justify-center py-[0px]">
-            <p className="text-[16px] font-semibold">Television</p>
-          </div>
-        </div>
+        </Link>
         {/* product 2 */}
-        <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
-          <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
-            <img src="/11.png" alt="" className="w-[130px]" />
+        <Link href="/products/home-theatre">
+          <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
+            <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
+              <img src="/11.png" alt="" className="w-[130px]" />
+            </div>
+            <div className="flex-[1] flex items-center justify-center py-[0px]">
+              <p className="text-[16px] font-semibold">Home Theater</p>
+            </div>
           </div>
-          <div className="flex-[1] flex items-center justify-center py-[0px]">
-            <p className="text-[16px] font-semibold">Home Theater</p>
-          </div>
-        </div>
+        </Link>
         {/* product 3 */}
         <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
           <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">

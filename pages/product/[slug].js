@@ -1,11 +1,25 @@
 import React from "react";
 import Head from "next/head";
-import HeroSection from "../../../components/ProductPage/HeroSection";
-import LinkTree from "../../../components/ProductPage/LinkTree";
-import RecommendedSection from "../../../components/ProductPage/RecommendedSection";
-import { products } from "../../../productsAPI";
+import HeroSection from "../../components/ProductPage/HeroSection";
+import LinkTree from "../../components/ProductPage/LinkTree";
+import RecommendedSection from "../../components/RecommendedSection";
+import { products } from "../../productsAPI";
+import {
+  MdChevronLeft,
+  MdChevronRight,
+  MdInsertEmoticon,
+} from "react-icons/md";
 
 const Product = ({ projects }) => {
+  const slideLeft = () => {
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 500;
+  };
+  const slideRight = () => {
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft + 500;
+  };
+
   return (
     <div className="">
       <Head>
@@ -35,7 +49,7 @@ const Product = ({ projects }) => {
         <link rel="apple-touch-icon" href="/favicon-md.svg" />
       </Head>
 
-      <LinkTree />
+      <LinkTree product={projects.desc} cat={projects.cat} lref={projects.link1} />
       <HeroSection
         img={projects.img}
         img2={projects.img2}
@@ -43,14 +57,15 @@ const Product = ({ projects }) => {
         img4={projects.img4}
         title={projects.title}
         desc={projects.desc}
+        cat={projects.cat}
         feat1={projects.feat1}
         feat2={projects.feat2}
         feat3={projects.feat3}
         feat4={projects.feat4}
         feat5={projects.feat5}
         featdesc={projects.featdesc}
+        lref={projects.link1}
       />
-      <RecommendedSection rowID="1" />
     </div>
   );
 };
