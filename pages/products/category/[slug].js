@@ -40,8 +40,15 @@ const Product = ({ projects }) => {
         img={projects.img}
         img2={projects.img2}
         img3={projects.img3}
+        img4={projects.img4}
         title={projects.title}
         desc={projects.desc}
+        feat1={projects.feat1}
+        feat2={projects.feat2}
+        feat3={projects.feat3}
+        feat4={projects.feat4}
+        feat5={projects.feat5}
+        featdesc={projects.featdesc}
       />
       <RecommendedSection rowID="1" />
     </div>
