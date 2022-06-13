@@ -10,7 +10,7 @@ const BlogPageSection = () => {
         <div className="max-w-[1240px] mx-auto px-[0px] xs:py-[0px] md:py-[100px]">
         <div className="flex xs:flex-col flex-wrap xs:items-center md:flex-row pt-[50px] ">
             {blogs.slice(0, 12).map((bg) => (
-              <Blog key={bg.id} img={bg.img} title={bg.title} date={bg.date} text={bg.text} />
+              <Blog key={bg.id} img={bg.img} title={bg.title} date={bg.date} text={bg.text} lref={bg.lref} />
             ))}
           </div>
         </div>

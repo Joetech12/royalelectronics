@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { BiCommentDots } from "react-icons/bi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { blogs } from "../blogsAPI";
@@ -14,9 +15,11 @@ const BlogSection = () => {
           <div className="flex flex-col items-center divide-y-[4px]">
             <div className="text-black text-[24px] font-bold flex space-x-[0px] h-full pt-[20px]">
               <div className="border-b-[5px] font-bold border-[#464A8A] h-full py-[20px] duration-300 group">
-                <div className="flex items-center px-[20px] cursor-pointer">
-                  <p className="">OUR BLOG</p>
-                </div>
+                <Link href="/blog">
+                  <div className="flex items-center px-[20px] cursor-pointer">
+                    <p className="">OUR BLOG</p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -30,6 +33,7 @@ const BlogSection = () => {
                 title={bg.title}
                 date={bg.date}
                 text={bg.text}
+                lref={bg.lref}
               />
             ))}
           </div>

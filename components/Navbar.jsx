@@ -164,9 +164,11 @@ function Navbar() {
             {/* right menus */}
             <div className="">
               <ul className="text-black  text-[16px] font-bold flex items-center space-x-[30px]">
-                <li className="cursor-pointer hover:text-[#464A8A] duration-300">
-                  BLOG
-                </li>
+                <Link href="/blog">
+                  <li className="cursor-pointer hover:text-[#464A8A] duration-300">
+                    BLOG
+                  </li>
+                </Link>
                 <p className="font-thin text-royal/90 text-[20px]">|</p>
                 <li className="cursor-pointer hover:text-[#464A8A] duration-300">
                   CONTACT US
