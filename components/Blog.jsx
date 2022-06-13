@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Blog = ({ img, title, date, text }) => {
   return (
-    <div className="bg-white w-full shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 pb-[30px] flex flex-col justify-center items-center m-[20px]">
+    <div className="bg-white xs:w-[320px] md:w-[375px] shadow-lg hover:shadow-xl transition-all duration-500 hover:translate-y-5 pb-[0px] flex flex-col justify-center items-center xs:m-[20px] md:mx-[10px]">
       {/* Image */}
       <div className="mb-[10px] cursor-pointer px-[-20px]">
         <Image src={img} alt="" width="500" height="300" />
@@ -24,7 +24,7 @@ const Blog = ({ img, title, date, text }) => {
           </div>
         </div>
         <p className="mr-[10px] line-clamp-3 mb-[20px]">{text}</p>
-        <div className="flex items-center  group hover:underline hover:text-royal underline-offset-[5px] mb-[20px]">
+        <div className="flex items-center text-royal3 group hover:underline hover:text-royal underline-offset-[5px] mb-[20px]">
           <p href="" className="cursor-pointer ">
             Read More
           </p>
