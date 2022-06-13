@@ -6,7 +6,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const ProductDetail3 = ({ img, img2, name, desc, slug, cat }) => {
   return (
-    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-lg hover:shadow-xl py-[0px] px-[0px] flex flex-col w-[330px] h-[360px] justify-center items-center group relative m-[10px]">
+    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-lg hover:shadow-xl py-[0px] px-[0px] flex flex-col w-[330px] h-[298px] justify-center items-center group relative m-[10px]">
       {/* Image */}
       <div className=" cursor-pointer px-[0px] transition-all duration-500 group-hover:scale-105 absolute top-[10%] group-hover:opacity-[0%]">
         <img src={img} alt="" objectfit="contain" height="200" width="200" />
