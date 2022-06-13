@@ -37,7 +37,7 @@ const blog = ({ blogg }) => {
         <div className="max-w-[1240px] mx-auto flex flex-col items-center justify-center relative xs:px-[0px] md:px-[20px]">
           {/* Blog heading */}
           <div className="flex flex-col items-center justify-center mb-[30px]">
-            <h1 className="font-bold xs:text-[30px] md:text-[40px] xs:text-center leading-[40px] xs:mb-[10px]">
+            <h1 className="font-bold xs:text-[30px] md:text-[40px] xs:text-center leading-[40px] xs:mb-[10px] px-[20px]">
               {blogg.title}
             </h1>
             <div className="flex items-center group mb-[20px]">
