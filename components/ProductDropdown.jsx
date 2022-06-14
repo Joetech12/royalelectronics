@@ -36,7 +36,7 @@ const ProductDropdown = ({ hidden, dropnav }) => {
           </div>
         </Link>
         {/* product 2 */}
-        <Link href="/products/home-theatre">
+        <Link href="/products/hometheatre">
           <div className="flex flex-col items-center justify-between cursor-pointer h-full ">
             <div className="flex-[3] flex items-end justify-center transition-all duration-500 hover:scale-110">
               <img src="/11.png" alt="" className="w-[130px]" />

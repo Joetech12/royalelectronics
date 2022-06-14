@@ -18,9 +18,11 @@ const TabletNav = () => {
           {/* left side */}
           <div className="flex items-center">
             {/* logo */}
-            <div className="xs:w-[70px] md:w-[90px] mr-[40px] cursor-pointer">
-              <img src="/royal_logo.svg" alt="" />
-            </div>
+            <Link href="/">
+              <div className="xs:w-[70px] md:w-[90px] mr-[40px] cursor-pointer">
+                <img src="/royal_logo.svg" alt="" />
+              </div>
+            </Link>
           </div>
           {/* right menus */}
           <div className="">
@@ -38,8 +40,8 @@ const TabletNav = () => {
       <div
         className={
           !nav
-            ? "fixed md:hidden bg-white h-full w-[80%] left-[-100%] top-0 flex flex-col items-start pt-[0px] pb-[50px] ease-in-out duration-[1000ms]   z-20 "
-            : "fixed md:hidden bg-white h-full w-[80%] top-0 flex flex-col items-start pt-[0px] pb-[50px] z-20 left-[0] ease-in-out duration-[1000ms]"
+            ? "fixed md:hidden bg-white h-full w-[80%] left-[-100%] top-0 flex flex-col items-start pt-[0px] pb-[50px] ease-in-out duration-[800ms]   z-20 "
+            : "fixed md:hidden bg-white h-full w-[80%] top-0 flex flex-col items-start pt-[0px] pb-[50px] z-20 left-[0] ease-in-out duration-[800ms]"
         }
       >
         <div className="flex items-center justify-between mb-[0px] xs:px-[20px] sm:px-[50px] py-[10px] w-full border-b-[2px]">
@@ -57,54 +59,62 @@ const TabletNav = () => {
         </div>
 
         <ul className=" font-semibold uppercase w-full xs:px-[20px] sm:px-[50px]">
-          <li className="flex items-center  justify-between w-full my-[50px] cursor-pointer">
-            <p className="hover:text-[#464A8A]">HOME</p>
-            <div className="text-[25px] text-royal cursor-pointer">
-              <MdOutlineKeyboardArrowRight />
-            </div>
-          </li>
+          <Link href="/">
+            <li onClick={handleNav} className="flex items-center  justify-between w-full my-[50px] cursor-pointer">
+              <p className="hover:text-[#464A8A]">HOME</p>
+              <div className="text-[25px] text-royal cursor-pointer">
+                <MdOutlineKeyboardArrowRight />
+              </div>
+            </li>
+          </Link>
 
-          <li className="flex items-center justify-between w-full my-[50px] cursor-pointer">
-            <p className="hover:text-[#464A8A]">TV/AUDIO/VIDEO</p>
-            <div className="text-[25px] text-royal cursor-pointer">
-              <MdOutlineKeyboardArrowRight />
-            </div>
-          </li>
+          <Link href="/products/television">
+            <li onClick={handleNav} className="flex items-center justify-between w-full my-[50px] cursor-pointer">
+              <p className="hover:text-[#464A8A]">TV/AUDIO/VIDEO</p>
+              <div className="text-[25px] text-royal cursor-pointer">
+                <MdOutlineKeyboardArrowRight />
+              </div>
+            </li>
+          </Link>
 
-          <li className="flex items-center justify-between w-full my-[50px] cursor-pointer">
+          <li onClick={handleNav} className="flex items-center justify-between w-full my-[50px] cursor-pointer">
             <p className="hover:text-[#464A8A]">HOME APPLIANCES</p>
             <div className="text-[25px] text-royal cursor-pointer">
               <MdOutlineKeyboardArrowRight />
             </div>
           </li>
 
-          <li className="flex items-center justify-between w-full my-[50px] cursor-pointer">
+          <li onClick={handleNav} className="flex items-center justify-between w-full my-[50px] cursor-pointer">
             <p className="hover:text-[#464A8A]">AIR CONDITIONERS</p>
             <div className="text-[25px] text-royal cursor-pointer">
               <MdOutlineKeyboardArrowRight />
             </div>
           </li>
 
-          <li className="flex items-center justify-between w-full my-[50px] cursor-pointer">
-            <p className=" hover:text-[#464A8A]">BLOG</p>
-            <div className="text-[25px] text-royal cursor-pointer">
-              <MdOutlineKeyboardArrowRight />
-            </div>
-          </li>
+          <Link href="/blog">
+            <li onClick={handleNav} className="flex items-center justify-between w-full my-[50px] cursor-pointer">
+              <p className=" hover:text-[#464A8A]">BLOG</p>
+              <div className="text-[25px] text-royal cursor-pointer">
+                <MdOutlineKeyboardArrowRight />
+              </div>
+            </li>
+          </Link>
 
-          <li className="flex items-center justify-between w-full my-[50px] cursor-pointer ">
+          <li onClick={handleNav} className="flex items-center justify-between w-full my-[50px] cursor-pointer ">
             <p className="hover:text-[#464A8A]">CONTACT US</p>
             <div className="text-[25px] text-royal cursor-pointer">
               <MdOutlineKeyboardArrowRight />
             </div>
           </li>
 
-          <li className="flex items-center justify-between w-full my-[50px] cursor-pointer">
-            <p className=" hover:text-[#464A8A]">STORE LOCATOR</p>
-            <div className="text-[25px] text-royal cursor-pointer">
-              <MdOutlineKeyboardArrowRight />
-            </div>
-          </li>
+          <Link href="/storelocator">
+            <li onClick={handleNav} className="flex items-center justify-between w-full my-[50px] cursor-pointer">
+              <p className=" hover:text-[#464A8A]">STORE LOCATOR</p>
+              <div className="text-[25px] text-royal cursor-pointer">
+                <MdOutlineKeyboardArrowRight />
+              </div>
+            </li>
+          </Link>
         </ul>
       </div>
 
