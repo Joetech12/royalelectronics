@@ -6,7 +6,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const ProductDetail3 = ({ img, img2, name, desc, slug, cat }) => {
   return (
-    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-lg hover:shadow-xl py-[0px] px-[0px] flex flex-col w-[330px] h-[298px] justify-center items-center group relative m-[10px]">
+    <div className="bg-white outline outline-[2px] outline-black/10 overflow-hidden shadow-lg hover:shadow-xl py-[0px] px-[0px] flex flex-col w-[330px] h-[298px] justify-center items-center group relative m-[10px] hover:scale-105 transition-all duration-500">
       {/* Image */}
       <div className=" cursor-pointer px-[0px] transition-all duration-500 group-hover:scale-105 absolute top-[10%] group-hover:opacity-[0%]">
         <img src={img} alt="" objectfit="contain" height="200" width="200" />
@@ -26,12 +26,11 @@ const ProductDetail3 = ({ img, img2, name, desc, slug, cat }) => {
             Details
           </button>
         </Link>
-        <button
-          href=""
-          className="outline outline-[2px] bg-gradient-to-r from-[#030632] to-[#0e1468] text-white rounded-[50px] px-[10px] py-[7px] cursor-pointer"
-        >
-          Where to buy
-        </button>
+        <Link href="/storelocator">
+          <button className="outline outline-[2px] bg-gradient-to-r from-[#030632] to-[#0e1468] text-white rounded-[50px] px-[10px] py-[7px] cursor-pointer">
+            Where to buy
+          </button>
+        </Link>
       </div>
     </div>
   );

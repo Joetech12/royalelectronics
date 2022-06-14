@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import Link from "next/link";
 import {
   dropHandler,
   dropHandler2,
@@ -137,12 +138,14 @@ const HeroSection = ({
                 {title}
               </p>
               <p className=" xs:text-[20px] md:text-[24px] mb-[40px]">{desc}</p>
-              <button
-                href=""
-                className="outline w-[200px] outline-[2px] bg-gradient-to-r from-[#0e1468] to-[#030632] hover:bg-gradient-to-l duration-300 transition-all text-white rounded-[50px] px-[30px] py-[20px] cursor-pointer"
-              >
-                Where to buy
-              </button>
+              <Link href="/storelocator">
+                <button
+                  href=""
+                  className="outline w-[200px] outline-[2px] bg-gradient-to-r from-[#0e1468] to-[#030632] hover:bg-gradient-to-l duration-300 transition-all text-white rounded-[50px] px-[30px] py-[20px] cursor-pointer"
+                >
+                  Where to buy
+                </button>
+              </Link>
             </div>
           </div>
 

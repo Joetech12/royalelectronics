@@ -41,7 +41,7 @@ const Footer = () => {
               <p className="cursor-pointer hover:text-white/70 duration-300 mb-[20px]">
                 Warranty
               </p>
-              <Link href="/store-locator">
+              <Link href="/storelocator">
                 <p className="font-bold mb-[10px] text-[18px] cursor-pointer hover:text-white/70 duration-300">Store Locator</p>
               </Link>
             </div>

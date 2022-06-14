@@ -26,12 +26,13 @@ const ProductDetail1 = ({ img, img2, name, desc, slug, cat }) => {
             Details
           </button>
         </Link>
-        <button
-          href=""
-          className="outline outline-[2px] bg-gradient-to-r from-[#030632] to-[#0e1468] text-white rounded-[50px] px-[10px] py-[7px] cursor-pointer"
-        >
-          Where to buy
-        </button>
+        <Link href="/storelocator">
+          <button
+            className="outline outline-[2px] bg-gradient-to-r from-[#030632] to-[#0e1468] text-white rounded-[50px] px-[10px] py-[7px] cursor-pointer"
+          >
+            Where to buy
+          </button>
+        </Link>
       </div>
     </div>
   );

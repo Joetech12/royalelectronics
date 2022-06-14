@@ -37,9 +37,9 @@ const storelocator = () => {
               allow="geolocation"
               width="100%"
               height="800px"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>

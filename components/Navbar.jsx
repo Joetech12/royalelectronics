@@ -88,7 +88,7 @@ function Navbar() {
             </div>
             {/* right side */}
             <div className="flex space-x-[20px] items-center">
-              <Link href="/store-locator">
+              <Link href="/storelocator">
                 <p className="cursor-pointer hover:text-white/70 duration-300 ">
                   STORE LOCATOR
                 </p>
