@@ -8,7 +8,7 @@ const TvSection = () => {
       <div className="bg-[#f1f1f1]">
         <div className="max-w-[1240px] mx-auto px-[0px] xs:py-[0px] md:py-[0px]">
           <div className="flex xs:flex-nowrap md:flex-wrap xs:flex-col justify-center items-center xs:items-center md:flex-row xs:py-[20px] md:py-[50px]">
-            {products.slice(9, 15).map((bg) => (
+            {products.slice(17, 23).map((bg) => (
               <ProductDetail3
                 key={bg.id}
                 img={bg.img}

@@ -44,7 +44,7 @@ const PopularSection = ({ rowID }) => {
               id={"slider" + rowID}
               className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
             >
-              {products.slice(0,10).map((item) => (
+              {products.slice(0,7).map((item) => (
                 <div
                   key={item.id}
                   className="inline-block"

@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import HeroSlider from "../components/HeroSlider";
 import Partners from "../components/Partners";
 import PopularSection from "../components/PopularSection";
+import PopularSection2 from "../components/PopularSection2";
 import ServiceFeaturesSection from "../components/ServiceFeaturesSection";
 import VideoSection from "../components/VideoSection";
 
@@ -43,7 +44,7 @@ export default function Home() {
       <ServiceFeaturesSection />
       <PopularSection rowID="1" />
       <VideoSection />
-      <BestSellersSection rowID="2" />
+      <PopularSection2 rowID="2" />
       <Partners />
       <BlogSection />
     </div>
