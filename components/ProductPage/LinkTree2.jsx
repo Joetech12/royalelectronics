@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const LinkTree2 = ({ title }) => {
-
   const [navscroll, setNavscroll] = useState(false);
 
   useEffect(() => {
@@ -16,20 +15,21 @@ const LinkTree2 = ({ title }) => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
-
-
-
   return (
-    <div className={
-      navscroll
-        ? "xs:mt-[60px] w-full mx-auto fixed xs:top-[0px] md:top-[50px] z-[80] md:mt-[10px]"
-        : "xs:mt-[60px] w-full mx-auto fixed xs:top-[0px] md:top-[50px] z-[80] md:mt-[60px]"
-    }>
+    <div
+      className={
+        navscroll
+          ? "xs:mt-[60px] w-full mx-auto fixed xs:top-[0px] md:top-[50px] z-[80] md:mt-[10px]"
+          : "xs:mt-[60px] w-full mx-auto fixed xs:top-[0px] md:top-[50px] z-[80] md:mt-[60px]"
+      }
+    >
       <div className="bg-[#f1f1f1]">
-        <div className="max-w-[1240px] mx-auto px-[20px]">
+        <div className="max-w-[1240px] mx-auto md:px-[20px] xs:px-[10px]">
           <div className="flex xs:flex-col md:flex-row justify-center items-center space-x-[20px] py-[30px]">
             <Link href="/">
-              <p className="font-bold underline cursor-pointer hover:underline">Home</p>
+              <p className="font-bold underline cursor-pointer hover:underline">
+                Home
+              </p>
             </Link>
             <p className="">/</p>
             {/* <p className="font-bold cursor-pointer hover:underline">Royal Products</p>
@@ -38,7 +38,7 @@ const LinkTree2 = ({ title }) => {
               <p className="font-bold cursor-pointer underline">All Blogs</p>
             </Link>
             <p className="">/</p>
-            <p className="font-bold text-black/40">{title}</p>
+            <p className="font-bold text-black/40 text-center">{title}</p>
           </div>
         </div>
       </div>
