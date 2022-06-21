@@ -34,7 +34,7 @@ export const products = [
     img4: "/14c.png",
     feat1: "Digital Inverter",
     feat2: "WiFi Function",
-    feat3: "Wider. Farther. Faster Cooling",
+    feat3: "Wider | Farther | Faster Cooling",
     feat4: "Button Panel Display",
     feat5: "Fast Sleep Mode",
     featdesc: `Royal Picasso AC also features an efficient Digital Inverter Technology that ensures you get optimum cooling while consuming up to 70% less energy. This means you get to save more on your electricity bills while the durable air conditioner continues to operate effectively.

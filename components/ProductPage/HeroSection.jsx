@@ -53,8 +53,8 @@ const HeroSection = ({
   //   console.log(dropValue, dropValue2, dropValue3);
 
   return (
-    <div className="w-full">
-      <div className="bg-white">
+    <div className="w-full xs:mt-[200px] md:mt-[200px]">
+      <div className="bg-white ">
         <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[0px] md:py-[0px]">
           {/* product overview */}
           <div className="flex md:flex-row xs:flex-col items-center">

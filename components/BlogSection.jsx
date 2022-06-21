@@ -2,11 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { BiCommentDots } from "react-icons/bi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { blogs } from "../blogsAPI";
+// import { blogs } from "../blogsAPI";
+import { getBlogs } from '../services';
+import { graphCMSImageLoader } from '../util';
 
 import Blog from "./Blog";
 
-const BlogSection = () => {
+const BlogSection = ({ blog }) => {
   return (
     <div className="w-full">
       <div className="bg-[#f1f1f1]">
@@ -26,16 +28,16 @@ const BlogSection = () => {
 
           {/* blogs */}
           <div className="flex xs:flex-col xs:items-center md:flex-row pt-[50px] ">
-            {blogs.slice(0, 3).map((bg) => (
+            {/* {blog?.map((bg) => (
               <Blog
                 key={bg.id}
-                img={bg.img}
+                img={bg.image.url}
                 title={bg.title}
                 date={bg.date}
-                text={bg.text}
-                lref={bg.lref}
+                text={bg.excerpt}
+                slug={bg.slug}
               />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

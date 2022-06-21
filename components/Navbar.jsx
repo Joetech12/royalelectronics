@@ -40,8 +40,8 @@ function Navbar() {
         <div
           className={
             navscroll
-              ? "bg-[#0e1468] text-white h-[41px] hidden text-[13px]"
-              : "bg-[#0e1468] text-white h-[41px] text-[13px] "
+              ? "bg-[#0e1468] text-white h-[41px] hidden text-[13px] transition-all duration-300"
+              : "bg-[#0e1468] text-white h-[41px] text-[13px] transition-all duration-300"
           }
         >
           <div className="max-w-[1240px] px-[20px] mx-auto h-full flex justify-between items-center">

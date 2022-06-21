@@ -1,8 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import BlogPageSection from "../../components/ProductPage/BlogPageSection";
+import BlogPageSection from "../../components/ProductPage/BlogMainSection";
+import { getBlogs } from "../../services";
+import Link from "next/link";
+import Blog from "../../components/Blog";
+import { graphCMSImageLoader } from '../../util';
 
-const blogs = () => {
+const blogs = ({ blogs }) => {
   return (
     <div>
       <Head>
@@ -32,10 +36,40 @@ const blogs = () => {
         <link rel="apple-touch-icon" href="/favicon-md.svg" />
       </Head>
 
-        <BlogPageSection />
+      <div>
+        <div className="w-full">
+      <div className="bg-[#f1f1f1]">
+        <div className="max-w-[1240px] mx-auto px-[0px] xs:py-[0px] md:py-[100px]">
+        <div className="flex xs:flex-col flex-wrap xs:items-center md:flex-row pt-[50px] ">
+        {blogs.map((blog, index) => (
+              <Blog
+                key={blog.node.id}
+                img={blog.node.image.url}
+                title={blog.node.title}
+                date={blog.node.date}
+                text={blog.node.excerpt}
+                slug={blog.node.slug}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
     </div>
   );
 };
 
 export default blogs;
+
+
+
+
+export async function getStaticProps() {
+  const blogs = (await getBlogs()) || [];
+  return {
+    props: { blogs },
+  };
+}
+

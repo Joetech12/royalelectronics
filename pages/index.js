@@ -9,8 +9,13 @@ import PopularSection from "../components/PopularSection";
 import PopularSection2 from "../components/PopularSection2";
 import ServiceFeaturesSection from "../components/ServiceFeaturesSection";
 import VideoSection from "../components/VideoSection";
+import { getBlogs } from "../services";
+import Link from "next/link";
+import Blog from "../components/Blog";
+import { graphCMSImageLoader } from '../util';
+import RecentBlog from "../components/RecentBlog";
 
-export default function Home() {
+export default function Home({ blogs }) {
   return (
     <div className="">
       <Head>
@@ -46,7 +51,38 @@ export default function Home() {
       <VideoSection />
       <PopularSection2 rowID="2" />
       <Partners />
-      <BlogSection />
+
+      <div className="w-full">
+      <div className="bg-[#f1f1f1]">
+        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[50px] md:py-[100px] divide-y-[4px]">
+          {/* heading */}
+          <div className="flex flex-col items-center divide-y-[4px]">
+            <div className="text-black text-[24px] font-bold flex space-x-[0px] h-full pt-[20px]">
+              <div className="border-b-[5px] font-bold border-[#464A8A] h-full py-[20px] duration-300 group">
+                <Link href="/blog">
+                  <div className="flex items-center px-[20px] cursor-pointer">
+                    <p className="">OUR BLOG</p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* blogs */}
+          <RecentBlog blogs={blogs} />
+        </div>
+      </div>
+    </div>
+
+
     </div>
   );
+}
+
+// Fetch data at build time
+export async function getStaticProps() {
+  const blogs = (await getBlogs()) || [];
+  return {
+    props: { blogs },
+  };
 }
