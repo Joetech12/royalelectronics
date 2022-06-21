@@ -26,9 +26,9 @@ const LinkTree = ({ product, cat, lref }) => {
     }>
         <div className="bg-[#f1f1f1]">
             <div className="max-w-[1240px] mx-auto px-[20px]">
-                 <div className="flex xs:flex-col md:flex-row justify-center items-center space-x-[20px] py-[30px]">
+                 <div className="flex xs:flex-col xs:items-center md:flex-row justify-center items-center space-x-[20px] py-[30px]">
                      <Link href="/">
-                       <p className="font-bold cursor-pointer hover:underline">Home</p>
+                       <p className="font-bold cursor-pointer hover:underline text-center">Home</p>
                      </Link>
                      <p className="">/</p>
                      {/* <p className="font-bold cursor-pointer hover:underline">Royal Products</p>

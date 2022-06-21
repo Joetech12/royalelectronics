@@ -55,7 +55,7 @@ const HeroSection = ({
   return (
     <div className="w-full xs:mt-[200px] md:mt-[200px]">
       <div className="bg-white ">
-        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[0px] md:py-[0px]">
+        <div className="max-w-[1240px] mx-auto px-[20px] xs:py-[50px] md:py-[0px]">
           {/* product overview */}
           <div className="flex md:flex-row xs:flex-col items-center">
             {/* left image */}
@@ -101,35 +101,41 @@ const HeroSection = ({
               </div>
               {/* click images */}
               <div className="flex xs:space-x-[10px] md:space-x-[20px] mb-[30px]">
+                {img && (
+                  <div
+                    onClick={() => dispatch(dropHandler4())}
+                    className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
+                  >
+                    <img src={img} alt="" objectfit="contain" />
+                  </div>
+                )}
 
-                { img && <div
-                  onClick={() => dispatch(dropHandler4())}
-                  className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
-                >
-                  <img src={img} alt="" objectfit="contain" />
-                </div>}
+                {img2 && (
+                  <div
+                    onClick={() => dispatch(dropHandler5())}
+                    className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
+                  >
+                    <img src={img2} alt="" objectfit="contain" />
+                  </div>
+                )}
 
-                { img2 && <div
-                  onClick={() => dispatch(dropHandler5())}
-                  className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
-                >
-                  <img src={img2} alt="" objectfit="contain" />
-                </div>}
+                {img3 && (
+                  <div
+                    onClick={() => dispatch(dropHandler6())}
+                    className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
+                  >
+                    <img src={img3} alt="" objectfit="contain" />
+                  </div>
+                )}
 
-                { img3 && <div
-                  onClick={() => dispatch(dropHandler6())}
-                  className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
-                >
-                  <img src={img3} alt="" objectfit="contain" />
-                </div>}
-
-                { img4 && <div
-                  onClick={() => dispatch(dropHandler7())}
-                  className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
-                >
-                  <img src={img4} alt="" objectfit="contain" />
-                </div>}
-
+                {img4 && (
+                  <div
+                    onClick={() => dispatch(dropHandler7())}
+                    className="xs:w-[70px] xs:h-[70px] md:w-[100px] md:h-[100px] outline outline-[1px] p-[10px] transition-all duration-500 hover:scale-105 cursor-pointer"
+                  >
+                    <img src={img4} alt="" objectfit="contain" />
+                  </div>
+                )}
               </div>
             </div>
             {/* right product name */}

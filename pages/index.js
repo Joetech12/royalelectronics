@@ -14,6 +14,7 @@ import Link from "next/link";
 import Blog from "../components/Blog";
 import { graphCMSImageLoader } from '../util';
 import RecentBlog from "../components/RecentBlog";
+import { getProducts } from "../services";
 
 export default function Home({ blogs }) {
   return (
