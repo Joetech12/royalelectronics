@@ -27,7 +27,7 @@ const PopularSection2 = ({ rowID }) => {
             <div className="text-black text-[24px] font-bold flex space-x-[0px] h-full pt-[0px]">
               <div className="border-b-[5px] font-bold border-[#464A8A] h-full py-[20px] duration-300 group">
                 <div className="flex items-center px-[20px] ">
-                  <p className="">NEW ARRIVALS</p>
+                  <p className="">BEST SELLERS</p>
                 </div>
               </div>
             </div>
